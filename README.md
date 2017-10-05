@@ -88,11 +88,11 @@ A journey of diving into iOS app architecture.
 
 - [WWDC 2014-Session 229: Advanced iOS Application Architecture and Patterns](https://developer.apple.com/videos/play/wwdc2014/229/)
 
-- 其他更多见 #40 
+- [iOS 组件化和路由](https://github.com/ShannonChenCHN/iOSLevelingUp/issues/40) 
 
 - [skyming/Trip-to-iOS-Design-Patterns](https://github.com/skyming/Trip-to-iOS-Design-Patterns)
 
-- 探探 MVX 系列
+- 谈谈 MVX 系列
   - [谈谈 MVX 中的 Model](http://draveness.me/mvx-model.html)
   - [谈谈 MVX 中的 View](http://draveness.me/mvx-view.html)
   - [谈谈 MVX 中的 Controller](http://draveness.me/mvx-controller.html)
@@ -117,7 +117,7 @@ A journey of diving into iOS app architecture.
   - [ iOS 开发中的 Flux 架构模式](https://juejin.im/entry/57972cdcc4c97100542c2ed4)
   - [reactjs/redux](https://github.com/reactjs/redux)
 
-- ### Builder Pattern
+- Builder Pattern
   - [Builder Pattern 在 Objective-C 中的使用](http://limboy.me/tech/2015/02/07/builder-pattern.html)
   - [iOS 创建对象的姿势](http://mrpeak.cn/blog/ios-init/)
 
