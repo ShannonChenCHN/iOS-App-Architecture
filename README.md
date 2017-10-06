@@ -8,7 +8,7 @@ A journey of diving into iOS app architecture.
 - [参考资料](#参考资料)
 
 
-### 大纲
+## 大纲
 - [重构](https://github.com/ShannonChenCHN/iOSLevelingUp/issues/78)
   - 为什么要重构？
   - 什么情况下需要重构？
@@ -45,17 +45,17 @@ A journey of diving into iOS app architecture.
     - [单例模式](https://github.com/ShannonChenCHN/iOSLevelingUp/issues/69)
 - [编程范式](https://github.com/ShannonChenCHN/iOSLevelingUp/issues/22)
 
-### 阅读笔记
+## 阅读笔记
 - [读 『如何写好一个UITableView』](https://github.com/ShannonChenCHN/iOS-App-Architecture/issues/2)
 - [读『杂谈: MVC/MVP/MVVM』](https://github.com/ShannonChenCHN/iOS-App-Architecture/issues/1)
 - [读『iOS应用架构谈 开篇』](https://github.com/ShannonChenCHN/iOS-App-Architecture/issues/3)
 - [读『 iOS应用架构谈 view层的组织和调用方案 』](https://github.com/ShannonChenCHN/iOS-App-Architecture/issues/4)
 
-### Example Project
+## Example Project
 - [ArchitecturePatternsExample](https://github.com/ShannonChenCHN/iOS-App-Architecture/tree/master/ArchitecturePatternsExample)：分别 MVC、MVP 和 MVVM 实现的一个示例 demo
 - [ListDemo/Example](https://github.com/ShannonChenCHN/iOS-App-Architecture/tree/master/ListDemo/Example)：基于 UITableView 实现的列表 demo
 
-### 参考资料
+## 参考资料
 
 - [浅谈 iOS 应用架构](https://github.com/ShannonChenCHN/iOSLevelingUp/issues/91)
 
