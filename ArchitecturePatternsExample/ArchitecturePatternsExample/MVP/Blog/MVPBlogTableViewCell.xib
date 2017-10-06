@@ -1,19 +1,86 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MVPBlogTableViewCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="101" id="a1e-8x-tqB" customClass="MVPBlogTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="370" height="101"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <frame key="frameInset" width="320" height="43"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="a1e-8x-tqB" id="NbG-0N-f8q">
+                <rect key="frame" x="0.0" y="0.0" width="370" height="100"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XeY-0h-Bm5">
+                        <rect key="frame" x="18" y="10" width="42" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFj-aU-HQ0">
+                        <rect key="frame" x="18" y="69.5" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAm-iX-sWQ">
+                        <rect key="frame" x="207" y="35.5" width="60" height="30"/>
+                        <color key="backgroundColor" red="1" green="0.53358970579999998" blue="0.41246890149999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="4iy-jG-uua"/>
+                            <constraint firstAttribute="height" constant="30" id="BzL-Wj-hxJ"/>
+                        </constraints>
+                        <state key="normal" title="Like">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="selected" title="Unlike">
+                            <color key="titleColor" red="0.97835271160000004" green="0.9999222874" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="didSelectLikeButton:" destination="a1e-8x-tqB" eventType="touchUpInside" id="LKO-o5-LR9"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mog-ib-2ic">
+                        <rect key="frame" x="287" y="35.5" width="60" height="30"/>
+                        <color key="backgroundColor" red="0.60356568440000002" green="0.59127175190000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="7v0-jq-BbL"/>
+                            <constraint firstAttribute="height" constant="30" id="9i5-OD-bjP"/>
+                        </constraints>
+                        <state key="normal" title="Share">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="didSelectShareButton:" destination="a1e-8x-tqB" eventType="touchUpInside" id="ZWv-Oz-zEA"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mog-ib-2ic" firstAttribute="leading" secondItem="QAm-iX-sWQ" secondAttribute="trailing" constant="20" id="4aG-xx-YDe"/>
+                    <constraint firstItem="QAm-iX-sWQ" firstAttribute="centerY" secondItem="NbG-0N-f8q" secondAttribute="centerY" id="Eae-1M-fZ9"/>
+                    <constraint firstItem="JFj-aU-HQ0" firstAttribute="leading" secondItem="NbG-0N-f8q" secondAttribute="leadingMargin" constant="10" id="QVV-nn-aps"/>
+                    <constraint firstItem="mog-ib-2ic" firstAttribute="centerY" secondItem="NbG-0N-f8q" secondAttribute="centerY" id="SyV-OL-0QG"/>
+                    <constraint firstItem="XeY-0h-Bm5" firstAttribute="leading" secondItem="NbG-0N-f8q" secondAttribute="leadingMargin" constant="10" id="Tv6-P6-d9p"/>
+                    <constraint firstItem="XeY-0h-Bm5" firstAttribute="top" secondItem="NbG-0N-f8q" secondAttribute="top" constant="10" id="ULH-9l-CWQ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="mog-ib-2ic" secondAttribute="trailing" constant="15" id="aOW-Ik-CGA"/>
+                    <constraint firstAttribute="bottom" secondItem="JFj-aU-HQ0" secondAttribute="bottom" constant="10" id="yFe-fM-Pnz"/>
+                </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="likeButton" destination="QAm-iX-sWQ" id="dll-yH-lUB"/>
+                <outlet property="nameLabel" destination="XeY-0h-Bm5" id="qmu-Xp-gIM"/>
+                <outlet property="shareButton" destination="mog-ib-2ic" id="HSk-vg-UG8"/>
+                <outlet property="summaryTextLabel" destination="JFj-aU-HQ0" id="2in-b3-pPD"/>
+            </connections>
+            <point key="canvasLocation" x="168" y="89"/>
         </tableViewCell>
     </objects>
 </document>

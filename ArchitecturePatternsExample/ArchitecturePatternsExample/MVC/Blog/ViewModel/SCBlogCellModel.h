@@ -20,5 +20,6 @@
 @property (strong, nonatomic) SCBlog *blog;
 
 - (instancetype)initWithBlog:(SCBlog *)blog;
+    
 
 @end

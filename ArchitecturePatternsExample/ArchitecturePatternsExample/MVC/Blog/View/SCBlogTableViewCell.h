@@ -12,6 +12,7 @@
 
 /**
  博客列表 cell
+ 注：这里暴露的 API 全部都是解耦的 set 方法，而不是与 model 耦合的 setModel 方法
  */
 @interface SCBlogTableViewCell : UITableViewCell <SCEventHandler>
 

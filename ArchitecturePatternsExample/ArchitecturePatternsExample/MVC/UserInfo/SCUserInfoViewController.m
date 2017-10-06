@@ -10,6 +10,7 @@
 #import "SCUserAPIManger.h"
 
 #import "SCUser.h"
+#import <UIButton+WebCache.h>
 
 
 @interface SCUserInfoViewController ()
@@ -17,6 +18,7 @@
 @property (strong, nonatomic) SCUser *user;
 
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UIButton *avatarView;
 
 @end
 
@@ -52,6 +54,9 @@
         
         self.user = [[SCUser alloc] initWithUserId:self.userId];
         self.nameLabel.text = self.user.name;
+        self.avatarView.imageView.contentMode = UIViewContentModeScaleAspectFill;
+        [self.avatarView sd_setImageWithURL:[NSURL URLWithString:self.user.avartarURLString]
+                                   forState:UIControlStateNormal];
     }];
     
 }

@@ -7,11 +7,13 @@ target 'ArchitecturePatternsExample' do
 
   # Pods for ArchitecturePatternsExample
 
-    pod 'MBProgressHUD', '~> 0.9.1'
-    pod 'MJRefresh', '~> 2.4.10'
-    pod 'Toast', '~> 3.0'
-    pod 'ReactiveCocoa', '~> 2.5'
-    pod 'Masonry'
-    pod 'YTKNetwork'
+    pod 'MBProgressHUD',    '~> 0.9.1'
+    pod 'MJRefresh',        '~> 2.4.10'
+    pod 'Toast',            '~> 3.0'
+    pod 'ReactiveCocoa',    '~> 2.5'
+    pod 'Masonry',          '~> 1.0.2'
+    pod 'YTKNetwork',       '~> 2.0.3'
+    pod 'DZNEmptyDataSet',  '~> 1.8.1'
+    pod 'SDWebImage',       '~> 4.0.0'
 
 end

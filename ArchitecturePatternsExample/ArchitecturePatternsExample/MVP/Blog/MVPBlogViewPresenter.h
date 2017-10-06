@@ -22,10 +22,10 @@
 @interface MVPBlogViewPresenter : NSObject
 
 @property (weak, nonatomic) id <MVPBlogViewPresenterCallBack> view;
+    
+@property (strong, nonatomic, readonly) NSMutableArray <MVPBlogCellPresenter *> *cellPresenters;
 
 - (instancetype)initWithUserId:(NSString *)userId;
-
-- (NSArray <MVPBlogCellPresenter *> *)cellPresenters;
 
 - (void)refreshData;
 - (void)loadMoreData;

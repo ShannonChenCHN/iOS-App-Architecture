@@ -11,5 +11,7 @@
 @interface MVPDraftViewController : UITableViewController
 
 - (instancetype)initWithUserId:(NSString *)userId;
+    
+- (void)fetchDataWithCompletionHandler:(void(^)(NSError *error, id result))completion;
 
 @end

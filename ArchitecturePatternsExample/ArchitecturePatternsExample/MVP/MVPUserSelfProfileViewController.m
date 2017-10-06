@@ -96,6 +96,7 @@
         };
     }
     
+    // 切换 tab
     self.segmentedControl = [[UISegmentedControl alloc] initWithItems:@[@"博客", @"草稿"]];
     self.segmentedControl.frame = CGRectMake(0, self.userInfoController.view.bottom + 5, 200, 30);
     self.segmentedControl.centerX = self.view.centerX;
@@ -104,8 +105,8 @@
     [self.view addSubview:self.segmentedControl];
     
     
-    
-    self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, self.segmentedControl.bottom + 5, self.view.width, self.view.height - self.segmentedControl.bottom - 64)];
+    // scroll view
+    self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, self.segmentedControl.bottom + 5, self.view.width, self.view.height - self.segmentedControl.bottom)];
     self.scrollView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     self.scrollView.contentSize = CGSizeMake(self.view.width * 2, 0);
     self.scrollView.scrollEnabled = NO;
@@ -137,6 +138,7 @@
 }
 
 - (void)setupModels {
+    
     [self.userInfoController fetchDataWithCompletionHandler:nil];
     
     
@@ -144,9 +146,18 @@
     [self.blogController.presenter fetchDataWithCompletionHandler:^(NSError *error, id result) {
         [self hideHUD];
     }];
+    
+    [self.draftController fetchDataWithCompletionHandler:nil];
 }
 
 
-
+- (void)switchTableView:(UISegmentedControl *)sender {
+    if (sender.selectedSegmentIndex == 0) {
+        
+        [self.scrollView setContentOffset:CGPointZero animated:YES];
+    } else {
+        [self.scrollView setContentOffset:CGPointMake(self.view.width, 0) animated:YES];
+    }
+}
 
 @end

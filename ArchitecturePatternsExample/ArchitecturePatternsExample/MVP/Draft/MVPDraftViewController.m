@@ -8,6 +8,8 @@
 
 #import "MVPDraftViewController.h"
 
+#import "UIViewController+DZNEmptyDataSet.h"
+
 @interface MVPDraftViewController ()
 
 @property (copy, nonatomic) NSString *userId;
@@ -30,6 +32,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    // 空态页
+    self.tableView.emptyDataSetSource = self;
+    self.tableView.emptyDataSetDelegate = self;
+    self.tableView.tableFooterView = [UIView new];
+}
+    
+- (void)fetchDataWithCompletionHandler:(void (^)(NSError *, id))completion {
     
 }
 

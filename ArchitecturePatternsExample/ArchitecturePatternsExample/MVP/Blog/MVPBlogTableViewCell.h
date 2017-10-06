@@ -8,6 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MVPBlogTableViewCell : UITableViewCell
+#import "MVPBlogCellPresenter.h"
 
+typedef void(^MVPBlogTableViewCellLikeHandler)();
+
+/**
+ 展示博客列表的 cell
+ */
+@interface MVPBlogTableViewCell : UITableViewCell
+    
+@property (strong, nonatomic) MVPBlogCellPresenter *presenter;
+@property (copy, nonatomic) MVPBlogTableViewCellLikeHandler likeHandler;
+    
+    
 @end

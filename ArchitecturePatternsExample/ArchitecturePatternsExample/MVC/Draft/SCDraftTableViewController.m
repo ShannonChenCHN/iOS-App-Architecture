@@ -8,7 +8,9 @@
 
 #import "SCDraftTableViewController.h"
 
-@interface SCDraftTableViewController ()
+#import <UIScrollView+EmptyDataSet.h>
+
+@interface SCDraftTableViewController () <DZNEmptyDataSetSource, DZNEmptyDataSetDelegate>
 
 @end
 
@@ -28,8 +30,32 @@
     return self;
 }
     
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    
+    self.tableView.emptyDataSetSource = self;
+    self.tableView.emptyDataSetDelegate = self;
+    self.tableView.tableFooterView = [UIView new];
+}
+    
 - (void)fetchDataWithCompletionHandler:(void (^)(NSError *, id))completion {
     
+}
+    
+#pragma mark - <DZNEmptyDataSetSource, DZNEmptyDataSetDelegate>
+    
+- (NSAttributedString *)titleForEmptyDataSet:(UIScrollView *)scrollView {
+    NSString *text = @"这里空空如也~";
+    
+    NSDictionary *attributes = @{NSFontAttributeName: [UIFont boldSystemFontOfSize:18.0f],
+                                 NSForegroundColorAttributeName: [UIColor darkGrayColor]};
+    
+    return [[NSAttributedString alloc] initWithString:text attributes:attributes];
+}
+    
+- (UIColor *)backgroundColorForEmptyDataSet:(UIScrollView *)scrollView {
+    return [UIColor whiteColor];
 }
 
 @end

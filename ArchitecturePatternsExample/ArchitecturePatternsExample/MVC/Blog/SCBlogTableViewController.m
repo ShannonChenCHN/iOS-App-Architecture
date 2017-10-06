@@ -117,6 +117,7 @@ static NSString * const kCellReuseIdentifier = @"SCBlogCell";
                     [weakSelf showToastWithText:@"你已经赞过它了~"];
                 } else {
                     cellModel.isLiked = YES;
+                    cellModel.likeCountText = [NSString stringWithFormat:@"%li", cellModel.likeCountText.integerValue + 1];
                     [weakCell setLikeState:cellModel.isLiked];
                 }
             } else {

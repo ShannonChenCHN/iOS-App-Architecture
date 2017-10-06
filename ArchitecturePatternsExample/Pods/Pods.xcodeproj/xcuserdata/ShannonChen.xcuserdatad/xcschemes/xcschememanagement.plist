@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>DZNEmptyDataSet.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MBProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -34,6 +39,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Toast.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,17 +57,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0EC25F3CE18EC0F7B5F44BC72E3E018E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>175B076ED45EB1A3E40F58BA14036467</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>263CD119B48D3142A28BA95C9959CD2E</key>
+		<key>496643A0C6647A237EA495B023CFA1A7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>496643A0C6647A237EA495B023CFA1A7</key>
+		<key>5437890023F30CA85DFCA260CA914D48</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>696D4569990115779CDD331CBED89A09</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6C41D9DB8878F6CD45615714C62667B1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7512C5338FE5846BD81DF134B4050765</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,17 +102,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A4D3559C00DFCBF04C15571B24AC8562</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C27D6FA3F6D84C58B607FAFE4C30B981</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E5E2F7DF47920BC5C3F621F422472D57</key>
+		<key>C4EBBE67A33A5190A603F01F33F13D3D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -10,6 +10,8 @@
 		58407AC41F72C47600CEA64F /* UIView+SCLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 58407AC31F72C47600CEA64F /* UIView+SCLayout.m */; };
 		58407AC71F72C4A800CEA64F /* UIView+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 58407AC61F72C4A800CEA64F /* UIView+HUD.m */; };
 		58407ACC1F72C84100CEA64F /* SCBlogListAPIManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 58407ACB1F72C84100CEA64F /* SCBlogListAPIManger.m */; };
+		587D77751F87CA5E00763B7A /* SCBlogLikeAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 587D77741F87CA5E00763B7A /* SCBlogLikeAPIManager.m */; };
+		587D77781F87CE1300763B7A /* UIViewController+DZNEmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 587D77771F87CE1300763B7A /* UIViewController+DZNEmptyDataSet.m */; };
 		588B2F211F65905D007660CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 588B2F201F65905D007660CF /* main.m */; };
 		588B2F241F65905D007660CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 588B2F231F65905D007660CF /* AppDelegate.m */; };
 		588B2F271F65905D007660CF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 588B2F261F65905D007660CF /* ViewController.m */; };
@@ -53,6 +55,10 @@
 		58407ACA1F72C84100CEA64F /* SCBlogListAPIManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBlogListAPIManger.h; sourceTree = "<group>"; };
 		58407ACB1F72C84100CEA64F /* SCBlogListAPIManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBlogListAPIManger.m; sourceTree = "<group>"; };
 		58407ACD1F72C8A100CEA64F /* SCUserAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCUserAPI.h; sourceTree = "<group>"; };
+		587D77731F87CA5E00763B7A /* SCBlogLikeAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBlogLikeAPIManager.h; sourceTree = "<group>"; };
+		587D77741F87CA5E00763B7A /* SCBlogLikeAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBlogLikeAPIManager.m; sourceTree = "<group>"; };
+		587D77761F87CE1300763B7A /* UIViewController+DZNEmptyDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DZNEmptyDataSet.h"; sourceTree = "<group>"; };
+		587D77771F87CE1300763B7A /* UIViewController+DZNEmptyDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DZNEmptyDataSet.m"; sourceTree = "<group>"; };
 		588B2F1C1F65905D007660CF /* ArchitecturePatternsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArchitecturePatternsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		588B2F201F65905D007660CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		588B2F221F65905D007660CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -130,6 +136,8 @@
 				58407AC31F72C47600CEA64F /* UIView+SCLayout.m */,
 				58407AC51F72C4A800CEA64F /* UIView+HUD.h */,
 				58407AC61F72C4A800CEA64F /* UIView+HUD.m */,
+				587D77761F87CE1300763B7A /* UIViewController+DZNEmptyDataSet.h */,
+				587D77771F87CE1300763B7A /* UIViewController+DZNEmptyDataSet.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -188,6 +196,8 @@
 				588B2F5F1F6AC732007660CF /* SCUserAPIManger.m */,
 				58407ACA1F72C84100CEA64F /* SCBlogListAPIManger.h */,
 				58407ACB1F72C84100CEA64F /* SCBlogListAPIManger.m */,
+				587D77731F87CA5E00763B7A /* SCBlogLikeAPIManager.h */,
+				587D77741F87CA5E00763B7A /* SCBlogLikeAPIManager.m */,
 			);
 			path = APIManager;
 			sourceTree = "<group>";
@@ -491,6 +501,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				58E984291F75094300B399A5 /* MVPBlogViewController.m in Sources */,
+				587D77751F87CA5E00763B7A /* SCBlogLikeAPIManager.m in Sources */,
 				58407AC71F72C4A800CEA64F /* UIView+HUD.m in Sources */,
 				58E984191F73CB7500B399A5 /* SCDraft.m in Sources */,
 				58E9841E1F73CB7500B399A5 /* SCUserInfoViewController.m in Sources */,
@@ -506,6 +517,7 @@
 				588B2F211F65905D007660CF /* main.m in Sources */,
 				588B2F601F6AC732007660CF /* SCUserAPIManger.m in Sources */,
 				58E984101F73CB7500B399A5 /* SCBlog.m in Sources */,
+				587D77781F87CE1300763B7A /* UIViewController+DZNEmptyDataSet.m in Sources */,
 				58E984171F73CB7500B399A5 /* SCUserDetailViewController.m in Sources */,
 				58E984231F75080400B399A5 /* MVPUserSelfProfileViewController.m in Sources */,
 				58E9843E1F750EBF00B399A5 /* MVPBlogTableViewCell.m in Sources */,
