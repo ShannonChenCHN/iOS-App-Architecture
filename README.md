@@ -26,7 +26,7 @@ A journey of diving into iOS app architecture.
 - 架构与业务的关系
 - iOS 移动端的架构
 - 如何设计 iOS 移动端的架构？
-- 如何成为一名合格的、优秀的架构师？
+- [如何成为一名合格的、优秀的架构师？](https://github.com/ShannonChenCHN/iOS-App-Architecture/issues/5)
 
 - 设计模式
   - 什么是设计模式？
@@ -66,8 +66,6 @@ A journey of diving into iOS app architecture.
   - [iOS应用架构谈 本地持久化方案及动态部署](http://casatwy.com/iosying-yong-jia-gou-tan-ben-di-chi-jiu-hua-fang-an-ji-dong-tai-bu-shu.html) 
   - [iOS应用架构谈 组件化方案](http://casatwy.com/iOS-Modulization.html)
 
-- [Casa：怎么面试架构师](https://casatwy.com/zen-yao-mian-shi-jia-gou-shi.html)
-
 - [猿题库 iOS 客户端架构设计（蓝晨钰）](http://gracelancy.com/blog/2016/01/06/ape-ios-arch-design/)
 
 - [被误解的MVC和被神化的MVVM（唐巧）](http://blog.devtang.com/2015/11/02/mvc-and-mvvm/)
@@ -97,6 +95,8 @@ A journey of diving into iOS app architecture.
 - [WWDC 2014-Session 224: Core iOS Application Architectural Patterns](https://developer.apple.com/videos/play/wwdc2014/224/)
 
 - [WWDC 2014-Session 229: Advanced iOS Application Architecture and Patterns](https://developer.apple.com/videos/play/wwdc2014/229/)
+
+- [Cocoa Design Patterns - Apple Developer Documentation](https://developer.apple.com/legacy/library/documentation/Cocoa/Conceptual/CocoaFundamentals/CocoaDesignPatterns/CocoaDesignPatterns.html)
 
 - [iOS 组件化和路由](https://github.com/ShannonChenCHN/iOSLevelingUp/issues/40) 
 
@@ -138,3 +138,6 @@ A journey of diving into iOS app architecture.
   - [面向切面编程之 Aspects 源码解析及应用](http://wereadteam.github.io/2016/06/30/Aspects/)
   - [Zen and the Art of the Objective-C Craftsmanship: Aspect Oriented Programming](https://github.com/objc-zen/objc-zen-book#aspect-oriented-programming)
 
+- 相关书籍
+  - [Objective-C编程之道](https://book.douban.com/subject/6920082/)
+  - [Cocoa Design Patterns](https://book.douban.com/subject/3688896/)
