@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+#import "MVPDraftViewPresenter.h"
+
 @interface MVPDraftViewController : UITableViewController
 
-- (instancetype)initWithUserId:(NSString *)userId;
+- (instancetype)initWithPresenter:(MVPDraftViewPresenter *)presenter;
     
 - (void)fetchDataWithCompletionHandler:(void(^)(NSError *error, id result))completion;
 

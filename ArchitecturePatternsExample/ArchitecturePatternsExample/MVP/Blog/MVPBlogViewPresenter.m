@@ -51,7 +51,7 @@
         
     } failure:^(__kindof YTKBaseRequest * _Nonnull request) {
         
-        // 测试数据
+        // 提供格式化好的数据给 View（测试数据）
         [self.cellPresenters removeAllObjects];
         
         for (int i = 0; i < 20; i ++) {

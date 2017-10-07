@@ -34,6 +34,8 @@
 @implementation MVPUserSelfProfileViewController
 
 
+#pragma mark - Life Cycle
+    
 - (instancetype)initWithUserId:(NSString *)userId {
     if (self = [super init]) {
         _userId = userId;
@@ -61,15 +63,49 @@
     
 }
 
-
+#pragma mark - Setup
 
 - (void)setupControllers {
+
+    __weak typeof(self) weakSelf = self;
     
-    self.userInfoController = [[SCUserInfoViewController alloc] initWithUserId:self.userId];
+    // 用户信息
+    self.userInfoController = [[SCUserInfoViewController alloc] initWithUserId:self.userId]; // 这个 userInfo 部分用的还是 MVC
+
+    self.userInfoController.eventHandler = ^(NSString *eventId, id params) {
+        if ([eventId isEqualToString:NSStringFromSelector(@selector(didSelectUserAvatar:))]) {
+            SCUserDetailViewController *controller = [[SCUserDetailViewController alloc] initWithUser:params];
+            [weakSelf.navigationController pushViewController:controller animated:YES];
+        }
+        
+    };
     
-    self.blogController = [[MVPBlogViewController alloc] initWithPresenter:[[MVPBlogViewPresenter alloc] initWithUserId:self.userId]];
+    /**
+    MVP 中的 P 和 V 是相互独立的逻辑，所以 P-V 中两者都是可以更换的，如果是基于 protocol 来实现的话，就更加解耦了
+    标准的 MVP 中，理论上，每个数据 Model 对应一个 View 层和一个 Presenter 层，以及 Controller 层：
+      - V 只负责展示
+      - P 专门负责数据转换直接提供给 V，以及处理业务逻辑
+      - C 只负责处理大场景的逻辑，与上层进行交互，比如展示网路加载等待时的 HUD，另外就是子 View 的布局和子 P-V 的绑定
     
-    self.draftController = [[MVPDraftViewController alloc] initWithUserId:self.userId];
+    */
+    
+    // 博客列表
+    MVPBlogViewPresenter *blogPresenter = [[MVPBlogViewPresenter alloc] initWithUserId:self.userId];
+    self.blogController = [[MVPBlogViewController alloc] initWithPresenter:blogPresenter];
+    
+    self.blogController.eventHandler = ^(NSString *eventId, id params) {  // 页面跳转逻辑交给上层处理
+    
+        if ([eventId isEqualToString:NSStringFromSelector(@selector(tableView:didDeselectRowAtIndexPath:))]) {
+            SCBlogDetailViewController *controller = [[SCBlogDetailViewController alloc] initWithBlog:params];
+            [weakSelf.navigationController pushViewController:controller animated:YES];
+        } else {
+            
+        }
+    };
+    
+    // 草稿箱
+    MVPDraftViewPresenter *draftPresenter = [[MVPDraftViewPresenter alloc] initWithUserId:self.userId];
+    self.draftController = [[MVPDraftViewController alloc] initWithPresenter:draftPresenter];
 }
 
 
@@ -77,23 +113,12 @@
     
     self.edgesForExtendedLayout = UIRectEdgeNone;
     
-    __weak typeof(self) weakSelf = self;
-    
     
     // 用户信息
     {
         self.userInfoController.view.frame = CGRectMake(0, 0, self.view.width, 160);
         self.userInfoController.view.autoresizingMask = UIViewAutoresizingFlexibleWidth;
         [self.view addSubview:self.userInfoController.view];
-        
-        // 事件的处理
-        self.userInfoController.eventHandler = ^(NSString *eventId, id params) {
-            if ([eventId isEqualToString:NSStringFromSelector(@selector(didSelectUserAvatar:))]) {
-                SCUserDetailViewController *controller = [[SCUserDetailViewController alloc] initWithUser:params];
-                [weakSelf.navigationController pushViewController:controller animated:YES];
-            }
-            
-        };
     }
     
     // 切换 tab
@@ -118,14 +143,6 @@
         self.blogController.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         [self.scrollView addSubview:self.blogController.tableView];
         
-//        self.blogController.eventHandler = ^(NSString *eventId, id params) {
-//            if ([eventId isEqualToString:NSStringFromSelector(@selector(tableView:didDeselectRowAtIndexPath:))]) {
-//                SCBlogDetailViewController *controller = [[SCBlogDetailViewController alloc] initWithBlog:params];
-//                [weakSelf.navigationController pushViewController:controller animated:YES];
-//            } else {
-//                
-//            }
-//        };
     }
     
     // 草稿列表
@@ -142,7 +159,7 @@
     [self.userInfoController fetchDataWithCompletionHandler:nil];
     
     
-    [self showHUD];
+    [self showHUD]; // HUD 展示交给上层处理
     [self.blogController.presenter fetchDataWithCompletionHandler:^(NSError *error, id result) {
         [self hideHUD];
     }];
@@ -151,6 +168,8 @@
 }
 
 
+#pragma mark - Action
+    
 - (void)switchTableView:(UISegmentedControl *)sender {
     if (sender.selectedSegmentIndex == 0) {
         

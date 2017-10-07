@@ -48,10 +48,28 @@
 
     
 - (void)setupControllers {
+
+    __weak typeof(self) weakSelf = self;
     
     self.userInfoController = [[SCUserInfoViewController alloc] initWithUserId:self.userId];
+    self.userInfoController.eventHandler = ^(NSString *eventId, id params) {
+    
+        if ([eventId isEqualToString:NSStringFromSelector(@selector(didSelectUserAvatar:))]) {
+            SCUserDetailViewController *controller = [[SCUserDetailViewController alloc] initWithUser:params];
+            [weakSelf.navigationController pushViewController:controller animated:YES];
+        }
+        
+    };
     
     self.blogController = [[SCBlogTableViewController alloc] initWithUserId:self.userId];
+    self.blogController.eventHandler = ^(NSString *eventId, id params) {
+        if ([eventId isEqualToString:NSStringFromSelector(@selector(tableView:didDeselectRowAtIndexPath:))]) {
+            SCBlogDetailViewController *controller = [[SCBlogDetailViewController alloc] initWithBlog:params];
+            [weakSelf.navigationController pushViewController:controller animated:YES];
+        } else {
+            
+        }
+    };
 }
     
     
@@ -59,22 +77,12 @@
     
     self.edgesForExtendedLayout = UIRectEdgeNone;
     
-    __weak typeof(self) weakSelf = self;
-    
     // 用户信息
     {
         self.userInfoController.view.frame = CGRectMake(0, 0, self.view.width, 160);
         self.userInfoController.view.autoresizingMask = UIViewAutoresizingFlexibleWidth;
         [self.view addSubview:self.userInfoController.view];
         
-        // 事件的处理
-        self.userInfoController.eventHandler = ^(NSString *eventId, id params) {
-            if ([eventId isEqualToString:NSStringFromSelector(@selector(didSelectUserAvatar:))]) {
-                SCUserDetailViewController *controller = [[SCUserDetailViewController alloc] initWithUser:params];
-                [weakSelf.navigationController pushViewController:controller animated:YES];
-            }
-            
-        };
     }
     
     // 博客列表
@@ -83,14 +91,6 @@
         self.blogController.view.autoresizingMask = UIViewAutoresizingFlexibleWidth;
         [self.view addSubview:self.blogController.view];
         
-        self.blogController.eventHandler = ^(NSString *eventId, id params) {
-            if ([eventId isEqualToString:NSStringFromSelector(@selector(tableView:didDeselectRowAtIndexPath:))]) {
-                SCBlogDetailViewController *controller = [[SCBlogDetailViewController alloc] initWithBlog:params];
-                [weakSelf.navigationController pushViewController:controller animated:YES];
-            } else {
-                
-            }
-        };
     }
 }
 

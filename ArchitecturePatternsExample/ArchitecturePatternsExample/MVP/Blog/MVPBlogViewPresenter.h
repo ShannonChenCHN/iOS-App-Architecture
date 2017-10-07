@@ -19,6 +19,9 @@
 @end
 
 
+/**
+ 博客列表的 Presenter
+ */
 @interface MVPBlogViewPresenter : NSObject
 
 @property (weak, nonatomic) id <MVPBlogViewPresenterCallBack> view;
@@ -29,6 +32,7 @@
 
 - (void)refreshData;
 - (void)loadMoreData;
+
 - (void)fetchDataWithCompletionHandler:(void(^)(NSError *error, id result))completion;
 
 @end

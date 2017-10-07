@@ -30,6 +30,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = self.blog.blogTitle;
     self.titleLabel.text = self.blog.blogTitle;
 }
 

@@ -18,12 +18,12 @@
 
 @implementation MVPDraftViewController
 
-- (instancetype)initWithUserId:(NSString *)userId {
+- (instancetype)initWithPresenter:(MVPDraftViewPresenter *)presenter {
     
     self = [super initWithStyle:UITableViewStylePlain];
     
     if (self) {
-        _userId = userId;
+        
         
     }
     

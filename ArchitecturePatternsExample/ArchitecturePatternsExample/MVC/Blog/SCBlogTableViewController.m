@@ -49,8 +49,6 @@ static NSString * const kCellReuseIdentifier = @"SCBlogCell";
     [super viewDidLoad];
     
     
-    self.view.backgroundColor = [UIColor yellowColor];
-    
     // 注册 cell
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass(SCBlogTableViewCell.class) bundle:nil]
          forCellReuseIdentifier:kCellReuseIdentifier];

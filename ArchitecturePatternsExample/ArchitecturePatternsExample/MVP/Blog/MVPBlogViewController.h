@@ -9,20 +9,14 @@
 #import <UIKit/UIKit.h>
 
 #import "MVPBlogViewPresenter.h"
-
-@protocol MVPBlogViewControllerEventHandler <NSObject>
-
-- (void)blogViewController:(UIViewController *)controller didSelectBlog:(SCBlog *)blog atIndex:(NSInteger)index;
-
-@end
-
-@interface MVPBlogViewController : UITableViewController
+#import "SCEventHandler.h"
 
 
-@property (weak, nonatomic) id<MVPBlogViewControllerEventHandler> delegate;
+@interface MVPBlogViewController : UITableViewController <SCEventHandler>
+
+@property (strong, nonatomic) MVPBlogViewPresenter *presenter;
+
 
 - (instancetype)initWithPresenter:(MVPBlogViewPresenter *)presenter;
-
-- (MVPBlogViewPresenter *)presenter;
 
 @end

@@ -12,6 +12,9 @@
 		58407ACC1F72C84100CEA64F /* SCBlogListAPIManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 58407ACB1F72C84100CEA64F /* SCBlogListAPIManger.m */; };
 		587D77751F87CA5E00763B7A /* SCBlogLikeAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 587D77741F87CA5E00763B7A /* SCBlogLikeAPIManager.m */; };
 		587D77781F87CE1300763B7A /* UIViewController+DZNEmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 587D77771F87CE1300763B7A /* UIViewController+DZNEmptyDataSet.m */; };
+		587D77801F887C7000763B7A /* SCUserProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 587D777D1F887C7000763B7A /* SCUserProfileViewController.m */; };
+		587D77811F887C7000763B7A /* SCUserSelfProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 587D777F1F887C7000763B7A /* SCUserSelfProfileViewController.m */; };
+		587D77841F887CEE00763B7A /* MVPDraftViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 587D77831F887CEE00763B7A /* MVPDraftViewPresenter.m */; };
 		588B2F211F65905D007660CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 588B2F201F65905D007660CF /* main.m */; };
 		588B2F241F65905D007660CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 588B2F231F65905D007660CF /* AppDelegate.m */; };
 		588B2F271F65905D007660CF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 588B2F261F65905D007660CF /* ViewController.m */; };
@@ -30,8 +33,6 @@
 		58E984181F73CB7500B399A5 /* SCUserDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58E983FB1F73CB7500B399A5 /* SCUserDetailViewController.xib */; };
 		58E984191F73CB7500B399A5 /* SCDraft.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E983FF1F73CB7500B399A5 /* SCDraft.m */; };
 		58E9841A1F73CB7500B399A5 /* SCDraftTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E984011F73CB7500B399A5 /* SCDraftTableViewController.m */; };
-		58E9841B1F73CB7500B399A5 /* SCUserProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E984041F73CB7500B399A5 /* SCUserProfileViewController.m */; };
-		58E9841C1F73CB7500B399A5 /* SCUserSelfProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E984071F73CB7500B399A5 /* SCUserSelfProfileViewController.m */; };
 		58E9841D1F73CB7500B399A5 /* SCUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E9840C1F73CB7500B399A5 /* SCUser.m */; };
 		58E9841E1F73CB7500B399A5 /* SCUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E9840E1F73CB7500B399A5 /* SCUserInfoViewController.m */; };
 		58E9841F1F73CB7500B399A5 /* SCUserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58E9840F1F73CB7500B399A5 /* SCUserInfoViewController.xib */; };
@@ -59,6 +60,14 @@
 		587D77741F87CA5E00763B7A /* SCBlogLikeAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBlogLikeAPIManager.m; sourceTree = "<group>"; };
 		587D77761F87CE1300763B7A /* UIViewController+DZNEmptyDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DZNEmptyDataSet.h"; sourceTree = "<group>"; };
 		587D77771F87CE1300763B7A /* UIViewController+DZNEmptyDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DZNEmptyDataSet.m"; sourceTree = "<group>"; };
+		587D777A1F887C4F00763B7A /* SCEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCEventHandler.h; sourceTree = "<group>"; };
+		587D777B1F887C7000763B7A /* SCUserProfileViewController_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCUserProfileViewController_Private.h; sourceTree = "<group>"; };
+		587D777C1F887C7000763B7A /* SCUserProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCUserProfileViewController.h; sourceTree = "<group>"; };
+		587D777D1F887C7000763B7A /* SCUserProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCUserProfileViewController.m; sourceTree = "<group>"; };
+		587D777E1F887C7000763B7A /* SCUserSelfProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCUserSelfProfileViewController.h; sourceTree = "<group>"; };
+		587D777F1F887C7000763B7A /* SCUserSelfProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCUserSelfProfileViewController.m; sourceTree = "<group>"; };
+		587D77821F887CEE00763B7A /* MVPDraftViewPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVPDraftViewPresenter.h; sourceTree = "<group>"; };
+		587D77831F887CEE00763B7A /* MVPDraftViewPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVPDraftViewPresenter.m; sourceTree = "<group>"; };
 		588B2F1C1F65905D007660CF /* ArchitecturePatternsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArchitecturePatternsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		588B2F201F65905D007660CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		588B2F221F65905D007660CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -90,12 +99,6 @@
 		58E983FF1F73CB7500B399A5 /* SCDraft.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCDraft.m; sourceTree = "<group>"; };
 		58E984001F73CB7500B399A5 /* SCDraftTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCDraftTableViewController.h; sourceTree = "<group>"; };
 		58E984011F73CB7500B399A5 /* SCDraftTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCDraftTableViewController.m; sourceTree = "<group>"; };
-		58E984031F73CB7500B399A5 /* SCUserProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCUserProfileViewController.h; sourceTree = "<group>"; };
-		58E984041F73CB7500B399A5 /* SCUserProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCUserProfileViewController.m; sourceTree = "<group>"; };
-		58E984051F73CB7500B399A5 /* SCUserProfileViewController_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCUserProfileViewController_Private.h; sourceTree = "<group>"; };
-		58E984061F73CB7500B399A5 /* SCUserSelfProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCUserSelfProfileViewController.h; sourceTree = "<group>"; };
-		58E984071F73CB7500B399A5 /* SCUserSelfProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCUserSelfProfileViewController.m; sourceTree = "<group>"; };
-		58E984081F73CB7500B399A5 /* SCEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCEventHandler.h; sourceTree = "<group>"; };
 		58E9840B1F73CB7500B399A5 /* SCUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCUser.h; sourceTree = "<group>"; };
 		58E9840C1F73CB7500B399A5 /* SCUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCUser.m; sourceTree = "<group>"; };
 		58E9840D1F73CB7500B399A5 /* SCUserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCUserInfoViewController.h; sourceTree = "<group>"; };
@@ -167,6 +170,7 @@
 				588B2F231F65905D007660CF /* AppDelegate.m */,
 				588B2F251F65905D007660CF /* ViewController.h */,
 				588B2F261F65905D007660CF /* ViewController.m */,
+				587D777A1F887C4F00763B7A /* SCEventHandler.h */,
 				58E984201F73CCA400B399A5 /* MVP */,
 				58E983E71F73CB7500B399A5 /* MVC */,
 				58407AC11F72C47600CEA64F /* Utils */,
@@ -205,11 +209,14 @@
 		58E983E71F73CB7500B399A5 /* MVC */ = {
 			isa = PBXGroup;
 			children = (
-				58E984081F73CB7500B399A5 /* SCEventHandler.h */,
+				587D777B1F887C7000763B7A /* SCUserProfileViewController_Private.h */,
+				587D777C1F887C7000763B7A /* SCUserProfileViewController.h */,
+				587D777D1F887C7000763B7A /* SCUserProfileViewController.m */,
+				587D777E1F887C7000763B7A /* SCUserSelfProfileViewController.h */,
+				587D777F1F887C7000763B7A /* SCUserSelfProfileViewController.m */,
 				58E983E81F73CB7500B399A5 /* Blog */,
 				58E983F51F73CB7500B399A5 /* Detail */,
 				58E983FC1F73CB7500B399A5 /* Draft */,
-				58E984021F73CB7500B399A5 /* Scene */,
 				58E984091F73CB7500B399A5 /* UserInfo */,
 			);
 			path = MVC;
@@ -287,18 +294,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		58E984021F73CB7500B399A5 /* Scene */ = {
-			isa = PBXGroup;
-			children = (
-				58E984051F73CB7500B399A5 /* SCUserProfileViewController_Private.h */,
-				58E984031F73CB7500B399A5 /* SCUserProfileViewController.h */,
-				58E984041F73CB7500B399A5 /* SCUserProfileViewController.m */,
-				58E984061F73CB7500B399A5 /* SCUserSelfProfileViewController.h */,
-				58E984071F73CB7500B399A5 /* SCUserSelfProfileViewController.m */,
-			);
-			path = Scene;
-			sourceTree = "<group>";
-		};
 		58E984091F73CB7500B399A5 /* UserInfo */ = {
 			isa = PBXGroup;
 			children = (
@@ -351,6 +346,8 @@
 			children = (
 				58E9842A1F75095F00B399A5 /* MVPDraftViewController.h */,
 				58E9842B1F75095F00B399A5 /* MVPDraftViewController.m */,
+				587D77821F887CEE00763B7A /* MVPDraftViewPresenter.h */,
+				587D77831F887CEE00763B7A /* MVPDraftViewPresenter.m */,
 			);
 			path = Draft;
 			sourceTree = "<group>";
@@ -501,12 +498,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				58E984291F75094300B399A5 /* MVPBlogViewController.m in Sources */,
+				587D77801F887C7000763B7A /* SCUserProfileViewController.m in Sources */,
 				587D77751F87CA5E00763B7A /* SCBlogLikeAPIManager.m in Sources */,
 				58407AC71F72C4A800CEA64F /* UIView+HUD.m in Sources */,
+				587D77811F887C7000763B7A /* SCUserSelfProfileViewController.m in Sources */,
 				58E984191F73CB7500B399A5 /* SCDraft.m in Sources */,
 				58E9841E1F73CB7500B399A5 /* SCUserInfoViewController.m in Sources */,
 				58E984111F73CB7500B399A5 /* SCBlogTableViewController.m in Sources */,
-				58E9841C1F73CB7500B399A5 /* SCUserSelfProfileViewController.m in Sources */,
 				58E9841A1F73CB7500B399A5 /* SCDraftTableViewController.m in Sources */,
 				588B2F271F65905D007660CF /* ViewController.m in Sources */,
 				58E9842C1F75095F00B399A5 /* MVPDraftViewController.m in Sources */,
@@ -520,10 +518,10 @@
 				587D77781F87CE1300763B7A /* UIViewController+DZNEmptyDataSet.m in Sources */,
 				58E984171F73CB7500B399A5 /* SCUserDetailViewController.m in Sources */,
 				58E984231F75080400B399A5 /* MVPUserSelfProfileViewController.m in Sources */,
+				587D77841F887CEE00763B7A /* MVPDraftViewPresenter.m in Sources */,
 				58E9843E1F750EBF00B399A5 /* MVPBlogTableViewCell.m in Sources */,
 				58E984121F73CB7500B399A5 /* SCBlogTableViewCell.m in Sources */,
 				58E984141F73CB7500B399A5 /* SCBlogCellModel.m in Sources */,
-				58E9841B1F73CB7500B399A5 /* SCUserProfileViewController.m in Sources */,
 				58407AC41F72C47600CEA64F /* UIView+SCLayout.m in Sources */,
 				58E9841D1F73CB7500B399A5 /* SCUser.m in Sources */,
 				58407ACC1F72C84100CEA64F /* SCBlogListAPIManger.m in Sources */,
