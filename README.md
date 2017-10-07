@@ -22,10 +22,9 @@ A journey of diving into iOS app architecture.
     - 数据流
       - Flux
       - Redux
-- 什么是架构，架构就是高大上？
-- 架构与业务的关系
-- iOS 移动端的架构
-- 如何设计 iOS 移动端的架构？
+  - 什么是架构，架构就是高大上？
+  - 架构与业务的关系
+  - iOS 移动端的架构
 - [如何成为一名合格的、优秀的架构师？](https://github.com/ShannonChenCHN/iOS-App-Architecture/issues/5)
 
 - 设计模式
@@ -45,6 +44,9 @@ A journey of diving into iOS app architecture.
     - [单例模式](https://github.com/ShannonChenCHN/iOSLevelingUp/issues/69)
 - [编程范式](https://github.com/ShannonChenCHN/iOSLevelingUp/issues/22)
 
+## 博客
+- [浅谈 iOS 应用架构](https://github.com/ShannonChenCHN/iOS-App-Architecture/issues/6)
+
 ## 阅读笔记
 - [读 『如何写好一个UITableView』](https://github.com/ShannonChenCHN/iOS-App-Architecture/issues/2)
 - [读『杂谈: MVC/MVP/MVVM』](https://github.com/ShannonChenCHN/iOS-App-Architecture/issues/1)
@@ -56,8 +58,6 @@ A journey of diving into iOS app architecture.
 - [ListDemo/Example](https://github.com/ShannonChenCHN/iOS-App-Architecture/tree/master/ListDemo/Example)：基于 UITableView 实现的列表 demo
 
 ## 参考资料
-
-- [浅谈 iOS 应用架构](https://github.com/ShannonChenCHN/iOSLevelingUp/issues/91)
 
 - iOS 应用架构谈系列（Casa Taloyum）：
   - [iOS应用架构谈 开篇](http://casatwy.com/iosying-yong-jia-gou-tan-kai-pian.html) 
