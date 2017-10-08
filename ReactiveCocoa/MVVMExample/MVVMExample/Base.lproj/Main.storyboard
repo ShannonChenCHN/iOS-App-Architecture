@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入用户名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OPr-W5-z2N">
+                                <rect key="frame" x="88" y="120" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6G3-Rd-ItB"/>
+                                    <constraint firstAttribute="width" constant="200" id="dG3-0k-JI2"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6hS-Lp-gQD">
+                                <rect key="frame" x="88" y="180" width="200" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEY-zh-jjS">
+                                <rect key="frame" x="152.5" y="245" width="70" height="30"/>
+                                <color key="backgroundColor" red="0.62281658175048404" green="0.89238220453262329" blue="0.72993860218827078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="13i-vn-DpG"/>
+                                    <constraint firstAttribute="width" constant="70" id="vPD-vE-qGb"/>
+                                </constraints>
+                                <state key="normal" title="登录"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6hS-Lp-gQD" firstAttribute="top" secondItem="OPr-W5-z2N" secondAttribute="bottom" constant="30" id="8qA-ry-Jr1"/>
+                            <constraint firstItem="OPr-W5-z2N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AS7-6d-R3R"/>
+                            <constraint firstItem="OPr-W5-z2N" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="FMP-ZH-qbE"/>
+                            <constraint firstItem="6hS-Lp-gQD" firstAttribute="height" secondItem="OPr-W5-z2N" secondAttribute="height" id="NIv-t7-bfd"/>
+                            <constraint firstItem="BEY-zh-jjS" firstAttribute="top" secondItem="6hS-Lp-gQD" secondAttribute="bottom" constant="35" id="WyY-WY-UAC"/>
+                            <constraint firstItem="6hS-Lp-gQD" firstAttribute="centerX" secondItem="OPr-W5-z2N" secondAttribute="centerX" id="hIg-uS-DMc"/>
+                            <constraint firstItem="BEY-zh-jjS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mpT-VS-xgL"/>
+                            <constraint firstItem="6hS-Lp-gQD" firstAttribute="width" secondItem="OPr-W5-z2N" secondAttribute="width" id="qIi-wu-sc1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="BEY-zh-jjS" id="dt2-Al-ag7"/>
+                        <outlet property="nameField" destination="OPr-W5-z2N" id="Yua-3s-ba8"/>
+                        <outlet property="passwordField" destination="6hS-Lp-gQD" id="jzS-3p-wuv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

@@ -19,6 +19,10 @@
 		587D778F1F888D3A00763B7A /* MVPBlogViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 587D77891F888D3A00763B7A /* MVPBlogViewPresenter.m */; };
 		587D77901F888D3A00763B7A /* MVPBlogTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 587D778C1F888D3A00763B7A /* MVPBlogTableViewCell.m */; };
 		587D77911F888D3A00763B7A /* MVPBlogTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 587D778D1F888D3A00763B7A /* MVPBlogTableViewCell.xib */; };
+		587D78001F89D74700763B7A /* MVVMUserSelfProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 587D77FF1F89D74700763B7A /* MVVMUserSelfProfileViewController.m */; };
+		587D78061F89D7D600763B7A /* MVVMBlogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 587D78051F89D7D600763B7A /* MVVMBlogViewController.m */; };
+		587D78091F89D7E600763B7A /* MVVMDraftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 587D78081F89D7E600763B7A /* MVVMDraftViewController.m */; };
+		587D780C1F89D7F900763B7A /* MVVMUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 587D780B1F89D7F900763B7A /* MVVMUserInfoViewController.m */; };
 		588B2F211F65905D007660CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 588B2F201F65905D007660CF /* main.m */; };
 		588B2F241F65905D007660CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 588B2F231F65905D007660CF /* AppDelegate.m */; };
 		588B2F271F65905D007660CF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 588B2F261F65905D007660CF /* ViewController.m */; };
@@ -75,6 +79,14 @@
 		587D778B1F888D3A00763B7A /* MVPBlogTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVPBlogTableViewCell.h; sourceTree = "<group>"; };
 		587D778C1F888D3A00763B7A /* MVPBlogTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVPBlogTableViewCell.m; sourceTree = "<group>"; };
 		587D778D1F888D3A00763B7A /* MVPBlogTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MVPBlogTableViewCell.xib; sourceTree = "<group>"; };
+		587D77FE1F89D74700763B7A /* MVVMUserSelfProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVVMUserSelfProfileViewController.h; sourceTree = "<group>"; };
+		587D77FF1F89D74700763B7A /* MVVMUserSelfProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVVMUserSelfProfileViewController.m; sourceTree = "<group>"; };
+		587D78041F89D7D600763B7A /* MVVMBlogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVVMBlogViewController.h; sourceTree = "<group>"; };
+		587D78051F89D7D600763B7A /* MVVMBlogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVVMBlogViewController.m; sourceTree = "<group>"; };
+		587D78071F89D7E600763B7A /* MVVMDraftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVVMDraftViewController.h; sourceTree = "<group>"; };
+		587D78081F89D7E600763B7A /* MVVMDraftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVVMDraftViewController.m; sourceTree = "<group>"; };
+		587D780A1F89D7F900763B7A /* MVVMUserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVVMUserInfoViewController.h; sourceTree = "<group>"; };
+		587D780B1F89D7F900763B7A /* MVVMUserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVVMUserInfoViewController.m; sourceTree = "<group>"; };
 		588B2F1C1F65905D007660CF /* ArchitecturePatternsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArchitecturePatternsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		588B2F201F65905D007660CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		588B2F221F65905D007660CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -166,6 +178,45 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		587D77921F888DA900763B7A /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				587D77FE1F89D74700763B7A /* MVVMUserSelfProfileViewController.h */,
+				587D77FF1F89D74700763B7A /* MVVMUserSelfProfileViewController.m */,
+				587D78011F89D7B700763B7A /* Blog */,
+				587D78021F89D7B700763B7A /* Draft */,
+				587D78031F89D7B700763B7A /* UserInfo */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		587D78011F89D7B700763B7A /* Blog */ = {
+			isa = PBXGroup;
+			children = (
+				587D78041F89D7D600763B7A /* MVVMBlogViewController.h */,
+				587D78051F89D7D600763B7A /* MVVMBlogViewController.m */,
+			);
+			path = Blog;
+			sourceTree = "<group>";
+		};
+		587D78021F89D7B700763B7A /* Draft */ = {
+			isa = PBXGroup;
+			children = (
+				587D78071F89D7E600763B7A /* MVVMDraftViewController.h */,
+				587D78081F89D7E600763B7A /* MVVMDraftViewController.m */,
+			);
+			path = Draft;
+			sourceTree = "<group>";
+		};
+		587D78031F89D7B700763B7A /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				587D780A1F89D7F900763B7A /* MVVMUserInfoViewController.h */,
+				587D780B1F89D7F900763B7A /* MVVMUserInfoViewController.m */,
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
 		588B2F131F65905D007660CF = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +243,7 @@
 				588B2F251F65905D007660CF /* ViewController.h */,
 				588B2F261F65905D007660CF /* ViewController.m */,
 				587D777A1F887C4F00763B7A /* SCEventHandler.h */,
+				587D77921F888DA900763B7A /* MVVM */,
 				58E984201F73CCA400B399A5 /* MVP */,
 				58E983E71F73CB7500B399A5 /* MVC */,
 				58407AC11F72C47600CEA64F /* Utils */,
@@ -515,10 +567,12 @@
 			files = (
 				58E984291F75094300B399A5 /* MVPBlogViewController.m in Sources */,
 				587D77801F887C7000763B7A /* SCUserProfileViewController.m in Sources */,
+				587D78001F89D74700763B7A /* MVVMUserSelfProfileViewController.m in Sources */,
 				587D77751F87CA5E00763B7A /* SCBlogLikeAPIManager.m in Sources */,
 				58407AC71F72C4A800CEA64F /* UIView+HUD.m in Sources */,
 				587D77811F887C7000763B7A /* SCUserSelfProfileViewController.m in Sources */,
 				587D778E1F888D3A00763B7A /* MVPBlogCellPresenter.m in Sources */,
+				587D780C1F89D7F900763B7A /* MVVMUserInfoViewController.m in Sources */,
 				58E984191F73CB7500B399A5 /* SCDraft.m in Sources */,
 				58E9841E1F73CB7500B399A5 /* SCUserInfoViewController.m in Sources */,
 				58E984111F73CB7500B399A5 /* SCBlogTableViewController.m in Sources */,
@@ -536,8 +590,10 @@
 				58E984171F73CB7500B399A5 /* SCUserDetailViewController.m in Sources */,
 				58E984231F75080400B399A5 /* MVPUserSelfProfileViewController.m in Sources */,
 				587D77841F887CEE00763B7A /* MVPDraftViewPresenter.m in Sources */,
+				587D78061F89D7D600763B7A /* MVVMBlogViewController.m in Sources */,
 				58E984121F73CB7500B399A5 /* SCBlogTableViewCell.m in Sources */,
 				58E984141F73CB7500B399A5 /* SCBlogCellModel.m in Sources */,
+				587D78091F89D7E600763B7A /* MVVMDraftViewController.m in Sources */,
 				58407AC41F72C47600CEA64F /* UIView+SCLayout.m in Sources */,
 				58E9841D1F73CB7500B399A5 /* SCUser.m in Sources */,
 				58407ACC1F72C84100CEA64F /* SCBlogListAPIManger.m in Sources */,
