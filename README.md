@@ -114,6 +114,7 @@ A journey of diving into iOS app architecture.
 
 - [marty-suzuki/iOSDesignPatternSamples](https://github.com/marty-suzuki/iOSDesignPatternSamples/issues/7)
 
+- [The Right Way to Architect iOS App with Swift - Limboy](http://limboy.me/tech/2017/06/22/the-right-way-to-ios-architecture.html)
 
 - Flux 架构
   - [React Flux入门指南](http://www.cocoachina.com/webapp/20151008/13649.html)
