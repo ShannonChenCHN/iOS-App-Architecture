@@ -72,8 +72,6 @@ A journey of diving into iOS app architecture.
 
 - [猿题库 iOS 客户端架构设计（蓝晨钰）](http://gracelancy.com/blog/2016/01/06/ape-ios-arch-design/)
 
-- [被误解的MVC和被神化的MVVM（唐巧）](http://blog.devtang.com/2015/11/02/mvc-and-mvvm/)
-
 - [objc.io - Issue 1 Lighter View Controllers系列](https://www.objc.io/issues/1-view-controllers/)
 
 - [objc.io - Issue 13 Architecture](https://www.objc.io/issues/13-architecture/)
@@ -114,15 +112,8 @@ A journey of diving into iOS app architecture.
 
 - [喵神：单向数据流动的函数式 View Controller](https://onevcat.com/2017/07/state-based-viewcontroller/)
 
-
 - [marty-suzuki/iOSDesignPatternSamples](https://github.com/marty-suzuki/iOSDesignPatternSamples/issues/7)
 
-
-- MVVM
-  - [MVVM With ReactiveCocoa - 雷纯锋的技术博客](http://blog.leichunfeng.com/blog/2016/02/27/mvvm-with-reactivecocoa/)
-  - [iOS MVVM+RAC 从框架到实战](http://www.jianshu.com/p/3beb21d5def2)
-  - [杨萧玉：ReactiveCocoa 和 MVVM 入门](http://yulingtianxia.com/blog/2015/05/21/ReactiveCocoa-and-MVVM-an-Introduction/)
-  - [饿了么稻子分享的 MVVM 架构：LPD-iOS/LPDMvvmKit](https://github.com/LPD-iOS/LPDMvvmKit)
 
 - Flux 架构
   - [React Flux入门指南](http://www.cocoachina.com/webapp/20151008/13649.html)
