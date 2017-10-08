@@ -33,7 +33,7 @@ A journey of diving into iOS app architecture.
   - 设计模式与实战
   - iOS 开发中常用的设计模式
     - MVC
-    - MVVM
+    - [MVVM](https://github.com/ShannonChenCHN/iOS-App-Architecture/issues/7)
     - MVP
     - VIPER
     - 通知
@@ -43,6 +43,10 @@ A journey of diving into iOS app architecture.
     - 命令模式
     - [单例模式](https://github.com/ShannonChenCHN/iOSLevelingUp/issues/69)
 - [编程范式](https://github.com/ShannonChenCHN/iOSLevelingUp/issues/22)
+  - 函数式编程
+  - 函数响应式编程
+    - [ReactiveCocoa](https://github.com/ShannonChenCHN/iOSLevelingUp/issues/91)
+    - RxSwift
 
 ## 博客
 - [浅谈 iOS 应用架构](https://github.com/ShannonChenCHN/iOS-App-Architecture/issues/6)
@@ -110,16 +114,15 @@ A journey of diving into iOS app architecture.
 
 - [喵神：单向数据流动的函数式 View Controller](https://onevcat.com/2017/07/state-based-viewcontroller/)
 
-- [饿了么稻子分享的 MVVM 架构：LPD-iOS/LPDMvvmKit](https://github.com/LPD-iOS/LPDMvvmKit)
 
 - [marty-suzuki/iOSDesignPatternSamples](https://github.com/marty-suzuki/iOSDesignPatternSamples/issues/7)
 
-- [MVVM With ReactiveCocoa - 雷纯锋的技术博客](http://blog.leichunfeng.com/blog/2016/02/27/mvvm-with-reactivecocoa/)
 
 - MVVM
-  - [深入浅出－iOS函数式编程的实现 && 响应式编程概念](http://www.jianshu.com/p/7017a220f34c)
+  - [MVVM With ReactiveCocoa - 雷纯锋的技术博客](http://blog.leichunfeng.com/blog/2016/02/27/mvvm-with-reactivecocoa/)
   - [iOS MVVM+RAC 从框架到实战](http://www.jianshu.com/p/3beb21d5def2)
   - [杨萧玉：ReactiveCocoa 和 MVVM 入门](http://yulingtianxia.com/blog/2015/05/21/ReactiveCocoa-and-MVVM-an-Introduction/)
+  - [饿了么稻子分享的 MVVM 架构：LPD-iOS/LPDMvvmKit](https://github.com/LPD-iOS/LPDMvvmKit)
 
 - Flux 架构
   - [React Flux入门指南](http://www.cocoachina.com/webapp/20151008/13649.html)
