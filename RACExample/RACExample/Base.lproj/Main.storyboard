@@ -39,7 +39,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="95x-jH-q8n">
-                                <rect key="frame" x="113" y="277" width="160" height="30"/>
+                                <rect key="frame" x="112.5" y="277" width="150" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -57,7 +57,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="tPO-yb-mLm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1P9-0S-VmV"/>
-                            <constraint firstItem="95x-jH-q8n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="5.5" id="1u5-IP-Y7W"/>
+                            <constraint firstItem="95x-jH-q8n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1u5-IP-Y7W"/>
                             <constraint firstItem="95x-jH-q8n" firstAttribute="height" secondItem="2iG-O4-Cmp" secondAttribute="height" id="4wZ-HR-lgP"/>
                             <constraint firstItem="2iG-O4-Cmp" firstAttribute="top" secondItem="Lzc-Fn-InF" secondAttribute="bottom" constant="80" id="72x-Zd-s5Q"/>
                             <constraint firstItem="tPO-yb-mLm" firstAttribute="top" secondItem="95x-jH-q8n" secondAttribute="bottom" constant="50" id="F7K-Ji-abg"/>
@@ -65,7 +65,7 @@
                             <constraint firstItem="Lzc-Fn-InF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZGt-Xl-4If"/>
                             <constraint firstItem="95x-jH-q8n" firstAttribute="top" secondItem="2iG-O4-Cmp" secondAttribute="bottom" constant="24" id="gbP-Qw-u5i"/>
                             <constraint firstItem="Lzc-Fn-InF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="nbm-Uf-kra"/>
-                            <constraint firstItem="95x-jH-q8n" firstAttribute="width" secondItem="2iG-O4-Cmp" secondAttribute="width" constant="10" id="yqA-xK-5dP"/>
+                            <constraint firstItem="95x-jH-q8n" firstAttribute="width" secondItem="2iG-O4-Cmp" secondAttribute="width" id="yqA-xK-5dP"/>
                         </constraints>
                     </view>
                     <connections>

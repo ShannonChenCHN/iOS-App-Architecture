@@ -15,6 +15,7 @@
 		587D77EE1F88EF0F00763B7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 587D77ED1F88EF0F00763B7A /* Assets.xcassets */; };
 		587D77F11F88EF0F00763B7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 587D77EF1F88EF0F00763B7A /* LaunchScreen.storyboard */; };
 		587D77FA1F890A5800763B7A /* SCUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 587D77F91F890A5800763B7A /* SCUser.m */; };
+		587D77FD1F89C6D900763B7A /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 587D77FC1F89C6D900763B7A /* NSString+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		587D77F21F88EF0F00763B7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		587D77F81F890A5800763B7A /* SCUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCUser.h; sourceTree = "<group>"; };
 		587D77F91F890A5800763B7A /* SCUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCUser.m; sourceTree = "<group>"; };
+		587D77FB1F89C6D900763B7A /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		587D77FC1F89C6D900763B7A /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 		6111F4297635377E45343FF6 /* libPods-RACExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RACExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F466BB7D39B777752F70A148 /* Pods-RACExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RACExample/Pods-RACExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,6 +85,8 @@
 				587D77E81F88EF0F00763B7A /* ViewController.m */,
 				587D77F81F890A5800763B7A /* SCUser.h */,
 				587D77F91F890A5800763B7A /* SCUser.m */,
+				587D77FB1F89C6D900763B7A /* NSString+Extension.h */,
+				587D77FC1F89C6D900763B7A /* NSString+Extension.m */,
 				587D77EA1F88EF0F00763B7A /* Main.storyboard */,
 				587D77ED1F88EF0F00763B7A /* Assets.xcassets */,
 				587D77EF1F88EF0F00763B7A /* LaunchScreen.storyboard */,
@@ -231,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				587D77FD1F89C6D900763B7A /* NSString+Extension.m in Sources */,
 				587D77FA1F890A5800763B7A /* SCUser.m in Sources */,
 				587D77E91F88EF0F00763B7A /* ViewController.m in Sources */,
 				587D77E61F88EF0F00763B7A /* AppDelegate.m in Sources */,
