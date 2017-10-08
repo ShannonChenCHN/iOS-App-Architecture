@@ -23,6 +23,13 @@
 		587D78061F89D7D600763B7A /* MVVMBlogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 587D78051F89D7D600763B7A /* MVVMBlogViewController.m */; };
 		587D78091F89D7E600763B7A /* MVVMDraftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 587D78081F89D7E600763B7A /* MVVMDraftViewController.m */; };
 		587D780C1F89D7F900763B7A /* MVVMUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 587D780B1F89D7F900763B7A /* MVVMUserInfoViewController.m */; };
+		587D783B1F8A090D00763B7A /* MVVMBlogViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 587D783A1F8A090D00763B7A /* MVVMBlogViewModel.m */; };
+		587D78411F8A094700763B7A /* MVVMBlogCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 587D78401F8A094700763B7A /* MVVMBlogCellModel.m */; };
+		587D78441F8A095A00763B7A /* MVVMUserInfoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 587D78431F8A095A00763B7A /* MVVMUserInfoViewModel.m */; };
+		587D78471F8A096A00763B7A /* MVVMDraftViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 587D78461F8A096A00763B7A /* MVVMDraftViewModel.m */; };
+		587D784B1F8A0B8A00763B7A /* MVVMBlogCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 587D78491F8A0B8A00763B7A /* MVVMBlogCell.m */; };
+		587D784C1F8A0B8A00763B7A /* MVVMBlogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 587D784A1F8A0B8A00763B7A /* MVVMBlogCell.xib */; };
+		587D784E1F8A413E00763B7A /* MVVMUserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 587D784D1F8A413E00763B7A /* MVVMUserInfoViewController.xib */; };
 		588B2F211F65905D007660CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 588B2F201F65905D007660CF /* main.m */; };
 		588B2F241F65905D007660CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 588B2F231F65905D007660CF /* AppDelegate.m */; };
 		588B2F271F65905D007660CF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 588B2F261F65905D007660CF /* ViewController.m */; };
@@ -87,6 +94,18 @@
 		587D78081F89D7E600763B7A /* MVVMDraftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVVMDraftViewController.m; sourceTree = "<group>"; };
 		587D780A1F89D7F900763B7A /* MVVMUserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVVMUserInfoViewController.h; sourceTree = "<group>"; };
 		587D780B1F89D7F900763B7A /* MVVMUserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVVMUserInfoViewController.m; sourceTree = "<group>"; };
+		587D78391F8A090D00763B7A /* MVVMBlogViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVVMBlogViewModel.h; sourceTree = "<group>"; };
+		587D783A1F8A090D00763B7A /* MVVMBlogViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVVMBlogViewModel.m; sourceTree = "<group>"; };
+		587D783F1F8A094700763B7A /* MVVMBlogCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVVMBlogCellModel.h; sourceTree = "<group>"; };
+		587D78401F8A094700763B7A /* MVVMBlogCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVVMBlogCellModel.m; sourceTree = "<group>"; };
+		587D78421F8A095A00763B7A /* MVVMUserInfoViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVVMUserInfoViewModel.h; sourceTree = "<group>"; };
+		587D78431F8A095A00763B7A /* MVVMUserInfoViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVVMUserInfoViewModel.m; sourceTree = "<group>"; };
+		587D78451F8A096A00763B7A /* MVVMDraftViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVVMDraftViewModel.h; sourceTree = "<group>"; };
+		587D78461F8A096A00763B7A /* MVVMDraftViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVVMDraftViewModel.m; sourceTree = "<group>"; };
+		587D78481F8A0B8A00763B7A /* MVVMBlogCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVVMBlogCell.h; sourceTree = "<group>"; };
+		587D78491F8A0B8A00763B7A /* MVVMBlogCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVVMBlogCell.m; sourceTree = "<group>"; };
+		587D784A1F8A0B8A00763B7A /* MVVMBlogCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MVVMBlogCell.xib; sourceTree = "<group>"; };
+		587D784D1F8A413E00763B7A /* MVVMUserInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MVVMUserInfoViewController.xib; sourceTree = "<group>"; };
 		588B2F1C1F65905D007660CF /* ArchitecturePatternsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArchitecturePatternsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		588B2F201F65905D007660CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		588B2F221F65905D007660CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -195,6 +214,13 @@
 			children = (
 				587D78041F89D7D600763B7A /* MVVMBlogViewController.h */,
 				587D78051F89D7D600763B7A /* MVVMBlogViewController.m */,
+				587D78391F8A090D00763B7A /* MVVMBlogViewModel.h */,
+				587D783A1F8A090D00763B7A /* MVVMBlogViewModel.m */,
+				587D783F1F8A094700763B7A /* MVVMBlogCellModel.h */,
+				587D78401F8A094700763B7A /* MVVMBlogCellModel.m */,
+				587D78481F8A0B8A00763B7A /* MVVMBlogCell.h */,
+				587D78491F8A0B8A00763B7A /* MVVMBlogCell.m */,
+				587D784A1F8A0B8A00763B7A /* MVVMBlogCell.xib */,
 			);
 			path = Blog;
 			sourceTree = "<group>";
@@ -204,6 +230,8 @@
 			children = (
 				587D78071F89D7E600763B7A /* MVVMDraftViewController.h */,
 				587D78081F89D7E600763B7A /* MVVMDraftViewController.m */,
+				587D78451F8A096A00763B7A /* MVVMDraftViewModel.h */,
+				587D78461F8A096A00763B7A /* MVVMDraftViewModel.m */,
 			);
 			path = Draft;
 			sourceTree = "<group>";
@@ -213,6 +241,9 @@
 			children = (
 				587D780A1F89D7F900763B7A /* MVVMUserInfoViewController.h */,
 				587D780B1F89D7F900763B7A /* MVVMUserInfoViewController.m */,
+				587D784D1F8A413E00763B7A /* MVVMUserInfoViewController.xib */,
+				587D78421F8A095A00763B7A /* MVVMUserInfoViewModel.h */,
+				587D78431F8A095A00763B7A /* MVVMUserInfoViewModel.m */,
 			);
 			path = UserInfo;
 			sourceTree = "<group>";
@@ -499,6 +530,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				587D784C1F8A0B8A00763B7A /* MVVMBlogCell.xib in Resources */,
 				58E9841F1F73CB7500B399A5 /* SCUserInfoViewController.xib in Resources */,
 				588B2F2F1F65905D007660CF /* LaunchScreen.storyboard in Resources */,
 				58E984131F73CB7500B399A5 /* SCBlogTableViewCell.xib in Resources */,
@@ -507,6 +539,7 @@
 				58E984181F73CB7500B399A5 /* SCUserDetailViewController.xib in Resources */,
 				588B2F2A1F65905D007660CF /* Main.storyboard in Resources */,
 				587D77911F888D3A00763B7A /* MVPBlogTableViewCell.xib in Resources */,
+				587D784E1F8A413E00763B7A /* MVVMUserInfoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,13 +600,16 @@
 			files = (
 				58E984291F75094300B399A5 /* MVPBlogViewController.m in Sources */,
 				587D77801F887C7000763B7A /* SCUserProfileViewController.m in Sources */,
+				587D783B1F8A090D00763B7A /* MVVMBlogViewModel.m in Sources */,
 				587D78001F89D74700763B7A /* MVVMUserSelfProfileViewController.m in Sources */,
 				587D77751F87CA5E00763B7A /* SCBlogLikeAPIManager.m in Sources */,
 				58407AC71F72C4A800CEA64F /* UIView+HUD.m in Sources */,
+				587D78411F8A094700763B7A /* MVVMBlogCellModel.m in Sources */,
 				587D77811F887C7000763B7A /* SCUserSelfProfileViewController.m in Sources */,
 				587D778E1F888D3A00763B7A /* MVPBlogCellPresenter.m in Sources */,
 				587D780C1F89D7F900763B7A /* MVVMUserInfoViewController.m in Sources */,
 				58E984191F73CB7500B399A5 /* SCDraft.m in Sources */,
+				587D784B1F8A0B8A00763B7A /* MVVMBlogCell.m in Sources */,
 				58E9841E1F73CB7500B399A5 /* SCUserInfoViewController.m in Sources */,
 				58E984111F73CB7500B399A5 /* SCBlogTableViewController.m in Sources */,
 				58E9841A1F73CB7500B399A5 /* SCDraftTableViewController.m in Sources */,
@@ -593,9 +629,11 @@
 				587D78061F89D7D600763B7A /* MVVMBlogViewController.m in Sources */,
 				58E984121F73CB7500B399A5 /* SCBlogTableViewCell.m in Sources */,
 				58E984141F73CB7500B399A5 /* SCBlogCellModel.m in Sources */,
+				587D78441F8A095A00763B7A /* MVVMUserInfoViewModel.m in Sources */,
 				587D78091F89D7E600763B7A /* MVVMDraftViewController.m in Sources */,
 				58407AC41F72C47600CEA64F /* UIView+SCLayout.m in Sources */,
 				58E9841D1F73CB7500B399A5 /* SCUser.m in Sources */,
+				587D78471F8A096A00763B7A /* MVVMDraftViewModel.m in Sources */,
 				58407ACC1F72C84100CEA64F /* SCBlogListAPIManger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

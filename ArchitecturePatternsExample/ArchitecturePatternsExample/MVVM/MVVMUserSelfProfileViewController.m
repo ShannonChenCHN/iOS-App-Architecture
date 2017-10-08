@@ -8,8 +8,16 @@
 
 #import "MVVMUserSelfProfileViewController.h"
 
+#import "MVVMUserInfoViewController.h"
+#import "MVVMBlogViewController.h"
+#import "MVVMDraftViewController.h"
+#import "SCUserDetailViewController.h"
+#import "SCBlogDetailViewController.h"
+
 #import "UIView+SCLayout.h"
 #import "UIView+HUD.h"
+
+#import <ReactiveCocoa.h>
 
 @interface MVVMUserSelfProfileViewController ()
 
@@ -19,9 +27,9 @@
 @property (strong, nonatomic) UISegmentedControl *segmentedControl;
 @property (strong, nonatomic) UIScrollView *scrollView;
 
-@property (strong, nonatomic) SCUserInfoViewController *userInfoController;
-@property (strong, nonatomic) MVPBlogViewController *blogController;
-@property (strong, nonatomic) MVPDraftViewController *draftController;
+@property (strong, nonatomic) MVVMUserInfoViewController *userInfoController;
+@property (strong, nonatomic) MVVMBlogViewController *blogController;
+@property (strong, nonatomic) MVVMDraftViewController *draftController;
 
 
 @end
@@ -63,45 +71,34 @@
     
 - (void)setupControllers {
     
-    __weak typeof(self) weakSelf = self;
+    @weakify(self);
     
     // 用户信息
-    self.userInfoController = [[SCUserInfoViewController alloc] initWithUserId:self.userId]; // 这个 userInfo 部分用的还是 MVC
-    
-    self.userInfoController.eventHandler = ^(NSString *eventId, id params) {
-        if ([eventId isEqualToString:NSStringFromSelector(@selector(didSelectUserAvatar:))]) {
-            SCUserDetailViewController *controller = [[SCUserDetailViewController alloc] initWithUser:params];
-            [weakSelf.navigationController pushViewController:controller animated:YES];
-        }
+    MVVMUserInfoViewModel *userInfoViewModel = [[MVVMUserInfoViewModel alloc] initWithUserId:self.userId];
+    self.userInfoController = [[MVVMUserInfoViewController alloc] initWithViewModel:userInfoViewModel];
+    self.userInfoController.avatarSelectedCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(SCUser *user) {
+        @strongify(self);
         
-    };
-    
-    /**
-     MVP 中的 P 和 V 是相互独立的逻辑，所以 P-V 中两者都是可以更换的，如果是基于 protocol 来实现的话，就更加解耦了
-     标准的 MVP 中，理论上，每个数据 Model 对应一个 View 层和一个 Presenter 层，以及 Controller 层：
-     - V 只负责展示
-     - P 专门负责数据转换直接提供给 V，以及处理业务逻辑
-     - C 只负责处理大场景的逻辑，与上层进行交互，比如展示网路加载等待时的 HUD，另外就是子 View 的布局和子 P-V 的绑定
-     
-     */
+        SCUserDetailViewController *controller = [[SCUserDetailViewController alloc] initWithUser:user];
+        [self.navigationController pushViewController:controller animated:YES];
+        
+        return [RACSignal empty];
+    }];
     
     // 博客列表
-    MVPBlogViewPresenter *blogPresenter = [[MVPBlogViewPresenter alloc] initWithUserId:self.userId];
-    self.blogController = [[MVPBlogViewController alloc] initWithPresenter:blogPresenter];
-    
-    self.blogController.eventHandler = ^(NSString *eventId, id params) {  // 页面跳转逻辑交给上层处理
+    MVVMBlogViewModel *blogViewModel = [[MVVMBlogViewModel alloc] initWithUserId:self.userId];
+    self.blogController = [[MVVMBlogViewController alloc] initWithViewModel:blogViewModel];
+    self.blogController.tableViewRowSelectedCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(SCBlog *blog) {
+        SCBlogDetailViewController *controller = [[SCBlogDetailViewController alloc] initWithBlog:blog];
+        [self.navigationController pushViewController:controller animated:YES];
         
-        if ([eventId isEqualToString:NSStringFromSelector(@selector(tableView:didDeselectRowAtIndexPath:))]) {
-            SCBlogDetailViewController *controller = [[SCBlogDetailViewController alloc] initWithBlog:params];
-            [weakSelf.navigationController pushViewController:controller animated:YES];
-        } else {
-            
-        }
-    };
+        return [RACSignal empty];
+    }];
+    
     
     // 草稿箱
-    MVPDraftViewPresenter *draftPresenter = [[MVPDraftViewPresenter alloc] initWithUserId:self.userId];
-    self.draftController = [[MVPDraftViewController alloc] initWithPresenter:draftPresenter];
+    MVVMDraftViewModel *draftViewModel = [[MVVMDraftViewModel alloc] initWithUserId:self.userId];
+    self.draftController = [[MVVMDraftViewController alloc] initWithViewModel:draftViewModel];
 }
     
     
@@ -152,15 +149,21 @@
     
 - (void)setupModels {
     
-    [self.userInfoController fetchDataWithCompletionHandler:nil];
+    [[self.userInfoController.viewModel.userInfoFetchingCommand execute:nil] subscribeError:^(NSError *error) {
+        [self showToastWithText:@"用户信息获取失败！"];
+    }];
     
     
     [self showHUD]; // HUD 展示交给上层处理
-    [self.blogController.presenter fetchDataWithCompletionHandler:^(NSError *error, id result) {
+    [[self.blogController.dataFetchingCommand execute:nil] subscribeError:^(NSError *error) {
+        [self hideHUD];
+        [self showToastWithText:@"博客数据获取失败！"];
+    } completed:^{
         [self hideHUD];
     }];
     
-    [self.draftController fetchDataWithCompletionHandler:nil];
+//
+//    [self.draftController fetchDataWithCompletionHandler:nil];
 }
     
     

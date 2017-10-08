@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MVVMUserInfoViewController">
+            <connections>
+                <outlet property="avatarView" destination="cE1-hK-dwK" id="gQo-xp-pg3"/>
+                <outlet property="nameLabel" destination="8Q2-6D-tEQ" id="szD-Tw-WFa"/>
+                <outlet property="view" destination="MFS-zh-DIe" id="7d4-BP-id8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="MFS-zh-DIe">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Q2-6D-tEQ">
+                    <rect key="frame" x="168" y="125" width="38" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cE1-hK-dwK">
+                    <rect key="frame" x="158" y="50" width="60" height="60"/>
+                    <color key="backgroundColor" red="0.86274509799999999" green="0.86666666670000003" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="gaT-by-mwN"/>
+                        <constraint firstAttribute="width" constant="60" id="laa-xj-hdo"/>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleColor" red="0.86274509799999999" green="0.86666666670000003" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cE1-hK-dwK" firstAttribute="centerX" secondItem="MFS-zh-DIe" secondAttribute="centerX" id="2RM-62-ulA"/>
+                <constraint firstItem="8Q2-6D-tEQ" firstAttribute="centerX" secondItem="MFS-zh-DIe" secondAttribute="centerX" id="5en-TX-Ooo"/>
+                <constraint firstItem="cE1-hK-dwK" firstAttribute="top" secondItem="MFS-zh-DIe" secondAttribute="top" constant="50" id="7WU-Qa-iqz"/>
+                <constraint firstItem="8Q2-6D-tEQ" firstAttribute="top" secondItem="cE1-hK-dwK" secondAttribute="bottom" constant="15" id="cwk-ev-Kbj"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-1.5" y="-12"/>
+        </view>
+    </objects>
+</document>

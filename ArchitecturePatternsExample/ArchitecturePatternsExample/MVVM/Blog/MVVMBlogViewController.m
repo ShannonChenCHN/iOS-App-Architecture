@@ -7,92 +7,108 @@
 //
 
 #import "MVVMBlogViewController.h"
+#import "UIViewController+DZNEmptyDataSet.h"
+#import <MJRefresh.h>
+
+#import "MVVMBlogCell.h"
+
+
+static NSString * const kCellReuseIdentifier = @"MVVMBlogCell";
+
 
 @interface MVVMBlogViewController ()
+
+@property (strong, nonatomic, readwrite) RACCommand *dataFetchingCommand;
 
 @end
 
 @implementation MVVMBlogViewController
 
+- (instancetype)initWithViewModel:(MVVMBlogViewModel *)viewModel {
+    if (self = [super initWithStyle:UITableViewStylePlain]) {
+        
+        _viewModel = viewModel;
+        
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    // 空态页
+    self.tableView.emptyDataSetSource = self;
+    self.tableView.emptyDataSetDelegate = self;
+    self.tableView.tableFooterView = [UIView new];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    // 注册 cell
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass(MVVMBlogCell.class) bundle:nil]
+         forCellReuseIdentifier:kCellReuseIdentifier];
+    
+    
+    @weakify(self);
+    
+    // 首次请求数据
+    self.dataFetchingCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
+        @strongify(self);
+        
+        RACSubject *subject = [RACSubject subject];
+        [self.viewModel.refreshDataSignal subscribeError:^(NSError *error) {
+            
+            [subject sendError:error];
+        } completed:^{
+            
+            [self.tableView reloadData];
+            [subject sendCompleted];
+        }];
+        
+        return subject;
+    }];
+    
+    // 下拉刷新
+    self.tableView.header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        @strongify(self);
+        
+        [self.viewModel.refreshDataSignal subscribeError:^(NSError *error) {
+            
+            [self.tableView.header endRefreshing];
+            
+        } completed:^{
+            
+            [self.tableView reloadData];
+            [self.tableView.header endRefreshing];
+            [self.tableView.footer resetNoMoreData];
+        }];
+    }];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
-
+#pragma mark - <UITableViewDelegate, UITableViewDataSource>
+    
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return self.viewModel.cellModels.count;
 }
-
-/*
+    
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    // Configure the cell...
+    MVVMBlogCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellReuseIdentifier];
     
+    if (indexPath.row < self.viewModel.cellModels.count) {
+        
+        MVVMBlogCellModel *cellModel = self.viewModel.cellModels[indexPath.row];
+        cell.cellModel = cellModel;
+    }
     return cell;
 }
-*/
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+    
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 70;
 }
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+    
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    [self.tableViewRowSelectedCommand execute:self.viewModel.cellModels[indexPath.row].blog];
 }
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

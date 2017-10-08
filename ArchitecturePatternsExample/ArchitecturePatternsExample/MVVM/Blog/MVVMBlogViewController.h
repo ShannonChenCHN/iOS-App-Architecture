@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MVVMBlogViewModel.h"
 
 @interface MVVMBlogViewController : UITableViewController
+
+@property (strong, nonatomic) MVVMBlogViewModel *viewModel;
+
+@property (strong, nonatomic, readonly) RACCommand *dataFetchingCommand;
+@property (strong, nonatomic) RACCommand *tableViewRowSelectedCommand;
+
+- (instancetype)initWithViewModel:(MVVMBlogViewModel *)viewModel;
 
 @end

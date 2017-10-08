@@ -35,6 +35,10 @@
 - (BOOL)isLiked {
     return self.blog.isLiked;
 }
+
+- (void)setIsLiked:(BOOL)isLiked {
+    self.blog.isLiked = isLiked;
+}
     
 - (NSString *)blogTitleText {
     return self.blog.blogTitle.length > 0 ? self.self.blog.blogTitle : @"标题";

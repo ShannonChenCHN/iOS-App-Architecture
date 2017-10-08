@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MVVMDraftViewModel.h"
 
 @interface MVVMDraftViewController : UITableViewController
+
+- (instancetype)initWithViewModel:(MVVMDraftViewModel *)viewModel;
 
 @end

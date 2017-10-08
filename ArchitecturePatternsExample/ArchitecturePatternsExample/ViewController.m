@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "SCUserSelfProfileViewController.h"
 #import "MVPUserSelfProfileViewController.h"
-
+#import "MVVMUserSelfProfileViewController.h"
 
 #import "SCUser.h"
 
@@ -40,7 +40,7 @@
 }
 
 - (IBAction)pushMVVMExampleForSelfScene:(id)sender {
-    
+    [self.navigationController pushViewController:[[MVVMUserSelfProfileViewController alloc] initWithUserId:@"123"] animated:YES];
 }
 
 
