@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MVC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zca-tY-jUW">
+                                <rect key="frame" x="166" y="190" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XGA-J4-cy2">
+                                <rect key="frame" x="147" y="318.5" width="80" height="30"/>
+                                <color key="backgroundColor" red="0.44718308572690846" green="1" blue="0.79899310850373895" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Hta-VY-Eb6"/>
+                                    <constraint firstAttribute="width" constant="80" id="We2-iP-VkJ"/>
+                                </constraints>
+                                <state key="normal" title="Greeting"/>
+                                <connections>
+                                    <action selector="didTapButtonWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PM7-Y6-uL9"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input your name here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kv6-KQ-YLe">
+                                <rect key="frame" x="87.5" y="120" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="GzR-f6-8p3"/>
+                                    <constraint firstAttribute="width" constant="200" id="nkv-gg-Yak"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Zca-tY-jUW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="170" id="0Jn-P8-tmh"/>
+                            <constraint firstItem="kv6-KQ-YLe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Jn-dd-dlS"/>
+                            <constraint firstItem="XGA-J4-cy2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JTb-nL-TtP"/>
+                            <constraint firstItem="Zca-tY-jUW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SI7-mk-RPx"/>
+                            <constraint firstItem="XGA-J4-cy2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="a2r-It-80x"/>
+                            <constraint firstItem="kv6-KQ-YLe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="zLw-ti-z2f"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="greetingLabel" destination="Zca-tY-jUW" id="BMK-ND-hU8"/>
+                        <outlet property="nameField" destination="kv6-KQ-YLe" id="E7T-ih-Hdw"/>
+                        <outlet property="showGreetingButton" destination="XGA-J4-cy2" id="RLM-2m-78T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

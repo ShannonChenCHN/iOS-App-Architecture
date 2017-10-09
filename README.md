@@ -62,6 +62,7 @@ A journey of diving into iOS app architecture.
 - [ListDemo/Example](https://github.com/ShannonChenCHN/iOS-App-Architecture/tree/master/ListDemo/Example)：基于 UITableView 实现的列表 demo
 
 ## 参考资料
+- [Apple's MVC Pattern - Apple Developer Documentation](https://developer.apple.com/library/content/documentation/General/Conceptual/DevPedia-CocoaCore/MVC.html)
 
 - iOS 应用架构谈系列（Casa Taloyum）：
   - [iOS应用架构谈 开篇](http://casatwy.com/iosying-yong-jia-gou-tan-kai-pian.html) 
