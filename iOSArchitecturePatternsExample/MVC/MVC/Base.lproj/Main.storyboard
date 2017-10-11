@@ -52,12 +52,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Zca-tY-jUW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="170" id="0Jn-P8-tmh"/>
                             <constraint firstItem="kv6-KQ-YLe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Jn-dd-dlS"/>
                             <constraint firstItem="XGA-J4-cy2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JTb-nL-TtP"/>
+                            <constraint firstItem="Zca-tY-jUW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="170" id="NFH-fW-dAz"/>
                             <constraint firstItem="Zca-tY-jUW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SI7-mk-RPx"/>
+                            <constraint firstItem="kv6-KQ-YLe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="VfB-ss-fqr"/>
                             <constraint firstItem="XGA-J4-cy2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="a2r-It-80x"/>
-                            <constraint firstItem="kv6-KQ-YLe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="zLw-ti-z2f"/>
                         </constraints>
                     </view>
                     <connections>

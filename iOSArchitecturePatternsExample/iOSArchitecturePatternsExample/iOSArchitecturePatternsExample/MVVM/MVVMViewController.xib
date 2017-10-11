@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MVVMViewController" customModule="iOSArchitecturePatternsExample" customModuleProvider="target">
+            <connections>
+                <outlet property="greetingLabel" destination="9sG-Up-hSK" id="xhD-7c-Rwn"/>
+                <outlet property="nameField" destination="ewu-dL-EqV" id="M83-2c-um7"/>
+                <outlet property="showGreetingButton" destination="FO1-Nu-Th6" id="nve-3c-4fM"/>
+                <outlet property="view" destination="9jg-Y6-a5I" id="3u1-iB-GCC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="9jg-Y6-a5I">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9sG-Up-hSK">
+                    <rect key="frame" x="166" y="190" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FO1-Nu-Th6">
+                    <rect key="frame" x="147" y="319" width="80" height="30"/>
+                    <color key="backgroundColor" red="0.44718308569999998" green="1" blue="0.79899310850000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="2oD-rA-avR"/>
+                        <constraint firstAttribute="width" constant="80" id="bua-3a-jD3"/>
+                    </constraints>
+                    <state key="normal" title="Greeting"/>
+                    <connections>
+                        <action selector="didTapButtonWithButton:" destination="-1" eventType="touchUpInside" id="y1B-fe-fch"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input your name here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ewu-dL-EqV">
+                    <rect key="frame" x="88" y="120" width="200" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="HMC-re-CuF"/>
+                        <constraint firstAttribute="width" constant="200" id="gl7-dp-sta"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="KLo-0Y-6oN"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9sG-Up-hSK" firstAttribute="top" secondItem="ewu-dL-EqV" secondAttribute="bottom" constant="40" id="72X-WO-SKB"/>
+                <constraint firstItem="9sG-Up-hSK" firstAttribute="centerX" secondItem="9jg-Y6-a5I" secondAttribute="centerX" id="Luc-bR-Tmv"/>
+                <constraint firstItem="FO1-Nu-Th6" firstAttribute="centerY" secondItem="9jg-Y6-a5I" secondAttribute="centerY" id="TPm-5M-wL0"/>
+                <constraint firstItem="9sG-Up-hSK" firstAttribute="top" secondItem="9jg-Y6-a5I" secondAttribute="top" constant="190" id="fu3-hH-lec"/>
+                <constraint firstItem="FO1-Nu-Th6" firstAttribute="centerX" secondItem="9jg-Y6-a5I" secondAttribute="centerX" id="jVP-XF-FMa"/>
+                <constraint firstItem="ewu-dL-EqV" firstAttribute="centerX" secondItem="9jg-Y6-a5I" secondAttribute="centerX" id="xIX-9S-gbr"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
