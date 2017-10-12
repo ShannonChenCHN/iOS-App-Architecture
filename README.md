@@ -54,6 +54,7 @@ A journey of diving into iOS app architecture.
 ## 阅读笔记
 - [读 『如何写好一个UITableView』](https://github.com/ShannonChenCHN/iOS-App-Architecture/issues/2)
 - [读『杂谈: MVC/MVP/MVVM』](https://github.com/ShannonChenCHN/iOS-App-Architecture/issues/1)
+- [读『 iOS Architecture Patterns: Demystifying MVC, MVP, MVVM and VIPER 』](https://github.com/ShannonChenCHN/iOS-App-Architecture/issues/4)
 - [读『iOS应用架构谈 开篇』](https://github.com/ShannonChenCHN/iOS-App-Architecture/issues/3)
 - [读『 iOS应用架构谈 view层的组织和调用方案 』](https://github.com/ShannonChenCHN/iOS-App-Architecture/issues/4)
 
@@ -77,7 +78,7 @@ A journey of diving into iOS app architecture.
 
 - [objc.io - Issue 13 Architecture](https://www.objc.io/issues/13-architecture/)
 
-- [iOS Architecture Patterns](https://medium.com/ios-os-x-development/ios-architecture-patterns-ecba4c38de52?source=userActivityShare-83b58fb60d90-1496985895)（[中译版](http://www.cocoachina.com/ios/20160108/14916.html)）
+- [iOS Architecture Patterns: Demystifying MVC, MVP, MVVM and VIPER ](https://medium.com/ios-os-x-development/ios-architecture-patterns-ecba4c38de52?source=userActivityShare-83b58fb60d90-1496985895)（[中译版](http://www.cocoachina.com/ios/20160108/14916.html)）
 
 - [初始化模式（禅与 Objective-C 编程艺术）](https://github.com/oa414/objc-zen-book-cn/#初始化模式)
 
