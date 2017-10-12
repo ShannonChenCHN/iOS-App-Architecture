@@ -106,6 +106,8 @@ A journey of diving into iOS app architecture.
 
 - [skyming/Trip-to-iOS-Design-Patterns](https://github.com/skyming/Trip-to-iOS-Design-Patterns)
 
+- [MVVM和Controller瘦身实践](https://github.com/LeoMobileDeveloper/Blogs/blob/master/iOS/MVVM%20and%20Controller%20thin.md)
+- [优雅的开发TableView](https://github.com/LeoMobileDeveloper/Blogs/blob/master/Swift/Elegant%20TableView.md)
 
 - 谈谈 MVX 系列
   - [谈谈 MVX 中的 Model](http://draveness.me/mvx-model.html)
