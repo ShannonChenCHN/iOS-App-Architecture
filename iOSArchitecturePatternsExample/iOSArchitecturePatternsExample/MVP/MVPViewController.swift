@@ -12,14 +12,16 @@ import UIKit
 /// Any presenter that used with the view `MVPViewController` must conform to the protocol `GreetingViewPresenter`
 protocol MVPGreetingViewPresenter {
     
-    init(view: MVPGreetingView, person: MVPPerson)  // owns model
+    init(view: MVPGreetingView, person: MVPPerson)
     
-    func updatePerson(name: String!)    // V -> update model -> M
-    func showGreeting()                 // M(V) -> update view(passive) -> V
+    // 提供处理事件的接口
+    func updatePerson(name: String?)
+    func showGreeting()
+    func didChangeName(_ name: String?)
 }
 
 
-/// MVPViewController == View
+/// MVPViewController 其实就是 View
 class MVPViewController: UIViewController, MVPGreetingView, UITextFieldDelegate {
     
     // MARK: Properties
@@ -30,36 +32,56 @@ class MVPViewController: UIViewController, MVPGreetingView, UITextFieldDelegate 
     @IBOutlet weak var showGreetingButton: UIButton!
     
     // Presenter
-    var presenter: MVPGreetingViewPresenter! // owns presenter
+    var presenter: MVPGreetingViewPresenter! // 持有 presenter
     
     // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // layout code goes here or layout through xib/storyboard
+        // subviews 布局代码
         
-        // sends action
+        // 将事件交给 presenter 处理
         self.presenter.showGreeting()
+        
+        // 注册通知
+        NotificationCenter.default.addObserver(self, selector: #selector(MVCViewController.textFieldDidChangeText(_:)), name: .UITextFieldTextDidChange, object: nil)
     }
     
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+
     
-    // MARK: User Action -> P
+    
+    // MARK: User Action
+    
     @IBAction func didTapButton(button: UIButton) {
         view.endEditing(true)
         
-        // sends user action
+        // 将事件交给 presenter 处理
         self.presenter.showGreeting()
     }
     
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        // sends user action
-        if let name = self.nameField.text, name.characters.count > 0 {
-            self.presenter.updatePerson(name: name)
-        }
+    func textFieldDidChangeText(_ notification: NSNotification) {
+        
+        // 将事件交给 presenter 处理
+        self.presenter.didChangeName(self.nameField.text)
+        
     }
     
-    // MARK: P -> Update View
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        
+        // 将事件交给 presenter 处理
+        self.presenter.updatePerson(name: textField.text)
+    }
+    
+    // MARK: 拿到 presenter 处理好的数据，更新 view
+    
     func setGreeting(_ greeting: String) {
         self.greetingLabel.text = greeting
+    }
+    
+    func setGreetingButtonEnabled(_ enabled: Bool) {
+        self.showGreetingButton.isEnabled = enabled
     }
 }

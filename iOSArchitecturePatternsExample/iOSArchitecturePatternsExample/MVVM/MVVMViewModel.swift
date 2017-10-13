@@ -11,28 +11,35 @@ import Foundation
 /// View Model
 class MVVMViewModel : GreetingViewModelProtocol {
     
-    var person: MVVMPerson   // owns model
-    var greeting: String? {
+    // 持有 model
+    var person: MVVMPerson   {
         didSet {
-            self.greetingDidChange?(self)  // user action binding -> update view
+            self.nameDidChange?(self, ) // 数据绑定：数据一改，对应的 view 就更新（实际上，一般采用 RxSwift 来实现，但是这里简单处理了）
         }
     }
+    
+    var greeting: String?
     var greetingDidChange: ((GreetingViewModelProtocol) -> ())?
+    var nameDidChange: ((GreetingViewModelProtocol) -> ())?
     
     
     required init(person: MVVMPerson) {
         self.person = person
     }
     
-    // MARK: Updates Model
+    // 接收 view 传递过来的事件
     func updatePerson(name: String!) {
         self.person = MVVMPerson(name: name)
     }
     
-    // update model
+    // 接收 view 传递过来的事件
     func showGreeting() {
         if let name =  self.person.name {
-            self.greeting = "Hello" + ", " + name + "!"  // -> user action binding -> update view
+            // 处理数据
+            self.greeting = "Hello" + ", " + name + "!"
+            
+            // 处理事件
+            self.greetingDidChange?(self)
         }
     }
 }
