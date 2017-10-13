@@ -51,10 +51,10 @@ class MVPPresenter: MVPGreetingViewPresenter {
         }
     }
     
-    func didChangeName(_ name: String?) {
+    func didChangeNameInput(_ input: String?) {
     
         // 更新 view
-        if let name = name, name.characters.count > 0  {
+        if let name = input, name.characters.count > 0  {
             
             self.view.setGreetingButtonEnabled(true)
             

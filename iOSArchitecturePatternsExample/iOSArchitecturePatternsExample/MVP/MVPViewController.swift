@@ -17,7 +17,7 @@ protocol MVPGreetingViewPresenter {
     // 提供处理事件的接口
     func updatePerson(name: String?)
     func showGreeting()
-    func didChangeName(_ name: String?)
+    func didChangeNameInput(_ input: String?)
 }
 
 
@@ -53,29 +53,30 @@ class MVPViewController: UIViewController, MVPGreetingView, UITextFieldDelegate 
 
     
     
-    // MARK: User Action
+    // MARK: User Action -> 将事件交给 presenter 处理
     
     @IBAction func didTapButton(button: UIButton) {
         view.endEditing(true)
         
-        // 将事件交给 presenter 处理
         self.presenter.showGreeting()
     }
     
     func textFieldDidChangeText(_ notification: NSNotification) {
         
-        // 将事件交给 presenter 处理
-        self.presenter.didChangeName(self.nameField.text)
+        if let object = notification.object as? UITextField, object == self.nameField {
+            self.presenter.didChangeNameInput(self.nameField.text)
+        }
         
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         
-        // 将事件交给 presenter 处理
-        self.presenter.updatePerson(name: textField.text)
+        if textField == self.nameField {
+            self.presenter.updatePerson(name: textField.text)
+        }
     }
     
-    // MARK: 拿到 presenter 处理好的数据，更新 view
+    // MARK: presenter 处理好数据后，更新 view
     
     func setGreeting(_ greeting: String) {
         self.greetingLabel.text = greeting

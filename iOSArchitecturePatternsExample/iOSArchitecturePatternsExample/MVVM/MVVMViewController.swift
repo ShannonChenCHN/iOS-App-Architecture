@@ -13,13 +13,13 @@ protocol GreetingViewModelProtocol: class {
     
     var greeting: String? { get }
     var greetingDidChange: ((GreetingViewModelProtocol) -> ())? { get set } // function to call when greeting did change
-    var nameDidChange: ((GreetingViewModelProtocol, Bool) -> ())? {get set}
+    var nameInputDidChange: ((GreetingViewModelProtocol, Bool) -> ())? {get set}
     init(person: MVVMPerson)
     
     // 提供处理事件的接口
-    func updatePerson(name: String!)
+    func updatePerson(name: String?)
     func showGreeting()
-    func didChangeName(_ name: String?)
+    func didChangeNameInput(_ input: String?)
 }
 
 
@@ -36,12 +36,12 @@ class MVVMViewController: UIViewController, UITextFieldDelegate {
     // View Model
     var viewModel: GreetingViewModelProtocol! {  // 持有 view model
         didSet {
-            // 数据绑定：数据一改，对应的 view 就更新（实际上，一般采用 RxSwift 来实现，但是这里简单处理了）
+            // 响应 view model 的数据更新：（实际上，一般采用 RxSwift 来实现数据绑定，但是这里简单处理了）
             self.viewModel.greetingDidChange = { [unowned self] viewModel in
                 self.greetingLabel.text = viewModel.greeting
             }
             
-            self.viewModel.nameDidChange = { [unowned self] viewModel, isEnabled in
+            self.viewModel.nameInputDidChange = { [unowned self] viewModel, isEnabled in
                 self.showGreetingButton.isEnabled = isEnabled
             }
         }
@@ -51,11 +51,11 @@ class MVVMViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // 事件绑定（实际上，一般采用 RxSwift 来实现，但是这里简单处理了）
+        
         self.viewModel.showGreeting()
         
         // 注册通知
-        NotificationCenter.default.addObserver(self, selector: #selector(MVCViewController.textFieldDidChangeText(_:)), name: .UITextFieldTextDidChange, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(MVCViewController.textFieldDidChangeText(_:)), name: .UITextFieldTextDidChange, object: self.nameField)
     }
     
     
@@ -65,28 +65,28 @@ class MVVMViewController: UIViewController, UITextFieldDelegate {
 
     
     
-    // MARK: User Action
+    // MARK: User Action -> 处理事件，并传给 View model 处理（实际上，一般采用 RxSwift 来实现事件绑定，但是这里简单处理了）
     
     @IBAction func didTapButton(button: UIButton) {
         view.endEditing(true)
         
-        // 事件绑定（实际上，一般采用 RxSwift 来实现，但是这里简单处理了）
         self.viewModel.showGreeting()
     }
     
+    
     func textFieldDidChangeText(_ notification: NSNotification) {
         
-        self.viewModel.didChangeName(self.nameField.text)
+        if let object = notification.object as? UITextField, object == self.nameField {
+            self.viewModel.didChangeNameInput(self.nameField.text)
+        }
         
     }
 
     func textFieldDidEndEditing(_ textField: UITextField) {
-        
-        if let name = self.nameField.text, name.characters.count > 0 {
-            
-            // 事件绑定（实际上，一般采用 RxSwift 来实现，但是这里简单处理了）
-            self.viewModel.updatePerson(name: name)
+        if textField == self.nameField {
+            self.viewModel.updatePerson(name: textField.text)
         }
+        
     }
 
 }
