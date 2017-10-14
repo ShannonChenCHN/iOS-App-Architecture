@@ -52,15 +52,20 @@ A journey of diving into iOS app architecture.
 - [浅谈 iOS 应用架构](https://github.com/ShannonChenCHN/iOS-App-Architecture/issues/6)
 
 ## 阅读笔记
-- [读 『如何写好一个UITableView』](https://github.com/ShannonChenCHN/iOS-App-Architecture/issues/2)
 - [读『杂谈: MVC/MVP/MVVM』](https://github.com/ShannonChenCHN/iOS-App-Architecture/issues/1)
+- [读 『如何写好一个UITableView』](https://github.com/ShannonChenCHN/iOS-App-Architecture/issues/2)
+- [读『iOS应用架构谈』系列](https://github.com/ShannonChenCHN/iOS-App-Architecture/issues/3)
 - [读『 iOS Architecture Patterns: Demystifying MVC, MVP, MVVM and VIPER 』](https://github.com/ShannonChenCHN/iOS-App-Architecture/issues/4)
-- [读『iOS应用架构谈 开篇』](https://github.com/ShannonChenCHN/iOS-App-Architecture/issues/3)
-- [读『 iOS应用架构谈 view层的组织和调用方案 』](https://github.com/ShannonChenCHN/iOS-App-Architecture/issues/4)
+
+
 
 ## Example Project
-- [ArchitecturePatternsExample](https://github.com/ShannonChenCHN/iOS-App-Architecture/tree/master/ArchitecturePatternsExample)：分别 MVC、MVP 和 MVVM 实现的一个示例 demo
+- [ArchitecturePatternsExample](https://github.com/ShannonChenCHN/iOS-App-Architecture/tree/master/ArchitecturePatternsExample)：分别用 MVC、MVP 和 MVVM 实现的一个示例 demo
 - [ListDemo/Example](https://github.com/ShannonChenCHN/iOS-App-Architecture/tree/master/ListDemo/Example)：基于 UITableView 实现的列表 demo
+- [FunctionalProgrammingExample](https://github.com/ShannonChenCHN/iOS-App-Architecture/tree/master/FunctionalProgrammingExample)：学习函数式编程的 demo，自己通过封装 Objective-C 代码实现函数式风格的接口
+- [ReactiveCocoaExamples](https://github.com/ShannonChenCHN/iOS-App-Architecture/tree/master/ReactiveCocoa)： 学习 ReactiveCocoa 相关的 demo
+- [iOSArchitecturePatternsExample](https://github.com/ShannonChenCHN/iOS-App-Architecture/tree/master/iOSArchitecturePatternsExample)：分别 MVC、MVP、MVVM 和 VIPER 实现的一个示例 demo
+
 
 ## 参考资料
 - [Apple's MVC Pattern - Apple Developer Documentation](https://developer.apple.com/library/content/documentation/General/Conceptual/DevPedia-CocoaCore/MVC.html)
