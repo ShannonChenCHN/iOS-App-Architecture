@@ -130,6 +130,8 @@ A journey of diving into iOS app architecture.
 
 - [安卓的 MVP 架构在 iOS 里面到底是什么](https://mp.weixin.qq.com/s?__biz=MzI0NzI1NzU5NA==&mid=2247483715&idx=1&sn=720cd59aa03cf4856b1bfaea47b6362c&chksm=e9b381d6dec408c054c20f62e50491e529fad790d805bf330364fc107dc28c0810f276b445a4&mpshare=1&scene=23&srcid=1008H6aDSqQf6LHPtUv9VrJk#rd)
 
+- [strongself/The-Book-of-VIPER](https://github.com/strongself/The-Book-of-VIPER)：一群俄罗斯人写的专门讲 VIPER 的书 
+
 - Flux 架构
   - [React Flux入门指南](http://www.cocoachina.com/webapp/20151008/13649.html)
   - [阮一峰：Flux 架构入门教程](http://www.ruanyifeng.com/blog/2016/01/flux.html)
