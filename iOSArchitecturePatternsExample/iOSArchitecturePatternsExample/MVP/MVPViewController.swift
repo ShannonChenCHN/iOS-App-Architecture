@@ -44,7 +44,7 @@ class MVPViewController: UIViewController, MVPGreetingView, UITextFieldDelegate 
         self.presenter.showGreeting()
         
         // 注册通知
-        NotificationCenter.default.addObserver(self, selector: #selector(MVCViewController.textFieldDidChangeText(_:)), name: .UITextFieldTextDidChange, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(MVPViewController.textFieldDidChangeText(_:)), name: .UITextFieldTextDidChange, object: nil)
     }
     
     deinit {
@@ -78,11 +78,11 @@ class MVPViewController: UIViewController, MVPGreetingView, UITextFieldDelegate 
     
     // MARK: presenter 处理好数据后，更新 view
     
-    func setGreeting(_ greeting: String) {
+    func setGreeting(_ greeting: String!) {
         self.greetingLabel.text = greeting
     }
     
-    func setGreetingButtonEnabled(_ enabled: Bool) {
+    func setGreetingButtonEnabled(_ enabled: Bool!) {
         self.showGreetingButton.isEnabled = enabled
     }
 }
