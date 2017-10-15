@@ -56,6 +56,7 @@ A journey of diving into iOS app architecture.
 - [读 『如何写好一个UITableView』](https://github.com/ShannonChenCHN/iOS-App-Architecture/issues/2)
 - [读『iOS应用架构谈』系列](https://github.com/ShannonChenCHN/iOS-App-Architecture/issues/3)
 - [读『 iOS Architecture Patterns: Demystifying MVC, MVP, MVVM and VIPER 』](https://github.com/ShannonChenCHN/iOS-App-Architecture/issues/4)
+- [读『优秀的 iOS 应用架构：MVVM、MVC、VIPER，孰优孰劣？』](https://github.com/ShannonChenCHN/iOS-App-Architecture/issues/9)
 
 
 
@@ -86,6 +87,8 @@ A journey of diving into iOS app architecture.
 - [优秀的 iOS 应用架构：MVVM、MVC、VIPER，孰优孰劣？ - Realm](https://academy.realm.io/cn/posts/krzysztof-zablocki-mDevCamp-ios-architecture-mvvm-mvc-viper/)⭐️⭐️⭐️
 
 - [杂谈: MVC/MVP/MVVM](http://www.jianshu.com/p/eedbc820d40a)⭐️⭐️
+
+- [marty-suzuki/iOSDesignPatternSamples](https://github.com/marty-suzuki/iOSDesignPatternSamples/issues/7)⭐️⭐️
 
 - [猿题库 iOS 客户端架构设计（蓝晨钰）](http://gracelancy.com/blog/2016/01/06/ape-ios-arch-design/)
 
@@ -128,12 +131,10 @@ A journey of diving into iOS app architecture.
 
 - [一起来重构臃肿的 Controller 吧！ - Realm Academy](https://academy.realm.io/cn/posts/andy-matuschak-refactor-mega-controller/)
 
-- [marty-suzuki/iOSDesignPatternSamples](https://github.com/marty-suzuki/iOSDesignPatternSamples/issues/7)
-
+- [Taming the Massive Controllers](https://academy.realm.io/posts/taming-massive-controller-altconf-2017-azam/)
 
 - [The Right Way to Architect iOS App with Swift - Limboy](http://limboy.me/tech/2017/06/22/the-right-way-to-ios-architecture.html)
 
-- [Taming the Massive Controllers](https://academy.realm.io/posts/taming-massive-controller-altconf-2017-azam/)
 
 - [安卓的 MVP 架构在 iOS 里面到底是什么](https://mp.weixin.qq.com/s?__biz=MzI0NzI1NzU5NA==&mid=2247483715&idx=1&sn=720cd59aa03cf4856b1bfaea47b6362c&chksm=e9b381d6dec408c054c20f62e50491e529fad790d805bf330364fc107dc28c0810f276b445a4&mpshare=1&scene=23&srcid=1008H6aDSqQf6LHPtUv9VrJk#rd)
 
