@@ -9,14 +9,37 @@
 /* Begin PBXBuildFile section */
 		580252731F345A0B00B0BA29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 580252721F345A0B00B0BA29 /* main.m */; };
 		580252761F345A0B00B0BA29 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 580252751F345A0B00B0BA29 /* AppDelegate.m */; };
-		580252791F345A0B00B0BA29 /* SCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 580252781F345A0B00B0BA29 /* SCTableViewController.m */; };
 		5802527C1F345A0B00B0BA29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5802527A1F345A0B00B0BA29 /* Main.storyboard */; };
 		5802527E1F345A0B00B0BA29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5802527D1F345A0B00B0BA29 /* Assets.xcassets */; };
 		580252811F345A0B00B0BA29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5802527F1F345A0B00B0BA29 /* LaunchScreen.storyboard */; };
-		E34CB8401F5D739A00EEB78A /* SCTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E34CB83F1F5D739A00EEB78A /* SCTableViewDataSource.m */; };
-		E34CB8431F5D73E100EEB78A /* SCCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E34CB8421F5D73E100EEB78A /* SCCollectionViewController.m */; };
-		E38BD5E81F5E871200075817 /* SCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E38BD5E71F5E871200075817 /* SCTableViewCell.m */; };
-		E38BD5EB1F5E890100075817 /* SCTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E38BD5EA1F5E890100075817 /* SCTableView.m */; };
+		58B400E51FBEEC01009D5D75 /* SCCollectionSectionFooterView.h in Sources */ = {isa = PBXBuildFile; fileRef = 58B400C71FBEE99C009D5D75 /* SCCollectionSectionFooterView.h */; };
+		58B400E61FBEEC02009D5D75 /* SCCollectionSectionFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B400C81FBEE99C009D5D75 /* SCCollectionSectionFooterView.m */; };
+		58B400E71FBEEC02009D5D75 /* SCCollectionSectionHeaderView.h in Sources */ = {isa = PBXBuildFile; fileRef = 58B400C91FBEE99C009D5D75 /* SCCollectionSectionHeaderView.h */; };
+		58B400E81FBEEC02009D5D75 /* SCCollectionSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B400CA1FBEE99C009D5D75 /* SCCollectionSectionHeaderView.m */; };
+		58B400E91FBEEC02009D5D75 /* SCCollectionViewAdapter.h in Sources */ = {isa = PBXBuildFile; fileRef = 58B400CB1FBEE99C009D5D75 /* SCCollectionViewAdapter.h */; };
+		58B400EA1FBEEC02009D5D75 /* SCCollectionViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B400CC1FBEE99C009D5D75 /* SCCollectionViewAdapter.m */; };
+		58B400EB1FBEEC02009D5D75 /* SCCollectionViewCell.h in Sources */ = {isa = PBXBuildFile; fileRef = 58B400CD1FBEE99C009D5D75 /* SCCollectionViewCell.h */; };
+		58B400EC1FBEEC02009D5D75 /* SCCollectionViewCellModel.h in Sources */ = {isa = PBXBuildFile; fileRef = 58B400CE1FBEE99C009D5D75 /* SCCollectionViewCellModel.h */; };
+		58B400ED1FBEEC02009D5D75 /* SCCollectionViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B400CF1FBEE99C009D5D75 /* SCCollectionViewCellModel.m */; };
+		58B400EE1FBEEC02009D5D75 /* SCCollectionViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 58B400D01FBEE99C009D5D75 /* SCCollectionViewController.h */; };
+		58B400EF1FBEEC02009D5D75 /* SCCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B400D11FBEE99C009D5D75 /* SCCollectionViewController.m */; };
+		58B400F01FBEEC02009D5D75 /* SCCollectionViewSectionHeaderFooter.h in Sources */ = {isa = PBXBuildFile; fileRef = 58B400D21FBEE99C009D5D75 /* SCCollectionViewSectionHeaderFooter.h */; };
+		58B400F11FBEEC02009D5D75 /* SCCollectionViewSectionModel.h in Sources */ = {isa = PBXBuildFile; fileRef = 58B400D31FBEE99C009D5D75 /* SCCollectionViewSectionModel.h */; };
+		58B400F21FBEEC02009D5D75 /* SCCollectionViewSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B400D41FBEE99C009D5D75 /* SCCollectionViewSectionModel.m */; };
+		58B400F31FBEEC02009D5D75 /* SCCutomCollectionViewCell.h in Sources */ = {isa = PBXBuildFile; fileRef = 58B400D51FBEE99C009D5D75 /* SCCutomCollectionViewCell.h */; };
+		58B400F41FBEEC02009D5D75 /* SCCutomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B400D61FBEE99C009D5D75 /* SCCutomCollectionViewCell.m */; };
+		58B400F51FBEEC0A009D5D75 /* SCTableView.h in Sources */ = {isa = PBXBuildFile; fileRef = 58B400DD1FBEE99D009D5D75 /* SCTableView.h */; };
+		58B400F61FBEEC0A009D5D75 /* SCTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B400DE1FBEE99D009D5D75 /* SCTableView.m */; };
+		58B400F71FBEEC0A009D5D75 /* SCTableViewCell.h in Sources */ = {isa = PBXBuildFile; fileRef = 58B400DF1FBEE99D009D5D75 /* SCTableViewCell.h */; };
+		58B400F81FBEEC0A009D5D75 /* SCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B400E01FBEE99D009D5D75 /* SCTableViewCell.m */; };
+		58B400F91FBEEC0A009D5D75 /* SCTableViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 58B400E11FBEE99D009D5D75 /* SCTableViewController.h */; };
+		58B400FA1FBEEC0A009D5D75 /* SCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B400E21FBEE99D009D5D75 /* SCTableViewController.m */; };
+		58B400FB1FBEEC0A009D5D75 /* SCTableViewDataSource.h in Sources */ = {isa = PBXBuildFile; fileRef = 58B400E31FBEE99D009D5D75 /* SCTableViewDataSource.h */; };
+		58B400FC1FBEEC0A009D5D75 /* SCTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B400E41FBEE99D009D5D75 /* SCTableViewDataSource.m */; };
+		58B400FD1FBEEC11009D5D75 /* MessageInterceptor.h in Sources */ = {isa = PBXBuildFile; fileRef = 58B400D81FBEE99D009D5D75 /* MessageInterceptor.h */; };
+		58B400FE1FBEEC11009D5D75 /* MessageInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B400D91FBEE99D009D5D75 /* MessageInterceptor.m */; };
+		58B400FF1FBEEC11009D5D75 /* UIDevice+SCExtension.h in Sources */ = {isa = PBXBuildFile; fileRef = 58B400DA1FBEE99D009D5D75 /* UIDevice+SCExtension.h */; };
+		58B401001FBEEC11009D5D75 /* UIDevice+SCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B400DB1FBEE99D009D5D75 /* UIDevice+SCExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,20 +47,38 @@
 		580252721F345A0B00B0BA29 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		580252741F345A0B00B0BA29 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		580252751F345A0B00B0BA29 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		580252771F345A0B00B0BA29 /* SCTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCTableViewController.h; sourceTree = "<group>"; };
-		580252781F345A0B00B0BA29 /* SCTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCTableViewController.m; sourceTree = "<group>"; };
 		5802527B1F345A0B00B0BA29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5802527D1F345A0B00B0BA29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		580252801F345A0B00B0BA29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		580252821F345A0B00B0BA29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E34CB83E1F5D739A00EEB78A /* SCTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTableViewDataSource.h; sourceTree = "<group>"; };
-		E34CB83F1F5D739A00EEB78A /* SCTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTableViewDataSource.m; sourceTree = "<group>"; };
-		E34CB8411F5D73E100EEB78A /* SCCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCCollectionViewController.h; sourceTree = "<group>"; };
-		E34CB8421F5D73E100EEB78A /* SCCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCCollectionViewController.m; sourceTree = "<group>"; };
-		E38BD5E61F5E871200075817 /* SCTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTableViewCell.h; sourceTree = "<group>"; };
-		E38BD5E71F5E871200075817 /* SCTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTableViewCell.m; sourceTree = "<group>"; };
-		E38BD5E91F5E890100075817 /* SCTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTableView.h; sourceTree = "<group>"; };
-		E38BD5EA1F5E890100075817 /* SCTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTableView.m; sourceTree = "<group>"; };
+		58B400C71FBEE99C009D5D75 /* SCCollectionSectionFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCollectionSectionFooterView.h; sourceTree = "<group>"; };
+		58B400C81FBEE99C009D5D75 /* SCCollectionSectionFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCollectionSectionFooterView.m; sourceTree = "<group>"; };
+		58B400C91FBEE99C009D5D75 /* SCCollectionSectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCollectionSectionHeaderView.h; sourceTree = "<group>"; };
+		58B400CA1FBEE99C009D5D75 /* SCCollectionSectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCollectionSectionHeaderView.m; sourceTree = "<group>"; };
+		58B400CB1FBEE99C009D5D75 /* SCCollectionViewAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCollectionViewAdapter.h; sourceTree = "<group>"; };
+		58B400CC1FBEE99C009D5D75 /* SCCollectionViewAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCollectionViewAdapter.m; sourceTree = "<group>"; };
+		58B400CD1FBEE99C009D5D75 /* SCCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCollectionViewCell.h; sourceTree = "<group>"; };
+		58B400CE1FBEE99C009D5D75 /* SCCollectionViewCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCollectionViewCellModel.h; sourceTree = "<group>"; };
+		58B400CF1FBEE99C009D5D75 /* SCCollectionViewCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCollectionViewCellModel.m; sourceTree = "<group>"; };
+		58B400D01FBEE99C009D5D75 /* SCCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCollectionViewController.h; sourceTree = "<group>"; };
+		58B400D11FBEE99C009D5D75 /* SCCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCollectionViewController.m; sourceTree = "<group>"; };
+		58B400D21FBEE99C009D5D75 /* SCCollectionViewSectionHeaderFooter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCollectionViewSectionHeaderFooter.h; sourceTree = "<group>"; };
+		58B400D31FBEE99C009D5D75 /* SCCollectionViewSectionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCollectionViewSectionModel.h; sourceTree = "<group>"; };
+		58B400D41FBEE99C009D5D75 /* SCCollectionViewSectionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCollectionViewSectionModel.m; sourceTree = "<group>"; };
+		58B400D51FBEE99C009D5D75 /* SCCutomCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCutomCollectionViewCell.h; sourceTree = "<group>"; };
+		58B400D61FBEE99C009D5D75 /* SCCutomCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCutomCollectionViewCell.m; sourceTree = "<group>"; };
+		58B400D81FBEE99D009D5D75 /* MessageInterceptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageInterceptor.h; sourceTree = "<group>"; };
+		58B400D91FBEE99D009D5D75 /* MessageInterceptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageInterceptor.m; sourceTree = "<group>"; };
+		58B400DA1FBEE99D009D5D75 /* UIDevice+SCExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+SCExtension.h"; sourceTree = "<group>"; };
+		58B400DB1FBEE99D009D5D75 /* UIDevice+SCExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+SCExtension.m"; sourceTree = "<group>"; };
+		58B400DD1FBEE99D009D5D75 /* SCTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCTableView.h; sourceTree = "<group>"; };
+		58B400DE1FBEE99D009D5D75 /* SCTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCTableView.m; sourceTree = "<group>"; };
+		58B400DF1FBEE99D009D5D75 /* SCTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCTableViewCell.h; sourceTree = "<group>"; };
+		58B400E01FBEE99D009D5D75 /* SCTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCTableViewCell.m; sourceTree = "<group>"; };
+		58B400E11FBEE99D009D5D75 /* SCTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCTableViewController.h; sourceTree = "<group>"; };
+		58B400E21FBEE99D009D5D75 /* SCTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCTableViewController.m; sourceTree = "<group>"; };
+		58B400E31FBEE99D009D5D75 /* SCTableViewDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCTableViewDataSource.h; sourceTree = "<group>"; };
+		58B400E41FBEE99D009D5D75 /* SCTableViewDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCTableViewDataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,16 +113,9 @@
 			children = (
 				580252741F345A0B00B0BA29 /* AppDelegate.h */,
 				580252751F345A0B00B0BA29 /* AppDelegate.m */,
-				580252771F345A0B00B0BA29 /* SCTableViewController.h */,
-				580252781F345A0B00B0BA29 /* SCTableViewController.m */,
-				E34CB83E1F5D739A00EEB78A /* SCTableViewDataSource.h */,
-				E34CB83F1F5D739A00EEB78A /* SCTableViewDataSource.m */,
-				E38BD5E61F5E871200075817 /* SCTableViewCell.h */,
-				E38BD5E71F5E871200075817 /* SCTableViewCell.m */,
-				E38BD5E91F5E890100075817 /* SCTableView.h */,
-				E38BD5EA1F5E890100075817 /* SCTableView.m */,
-				E34CB8411F5D73E100EEB78A /* SCCollectionViewController.h */,
-				E34CB8421F5D73E100EEB78A /* SCCollectionViewController.m */,
+				58B400C61FBEE99C009D5D75 /* CollectionView */,
+				58B400D71FBEE99D009D5D75 /* Helper */,
+				58B400DC1FBEE99D009D5D75 /* TableView */,
 				5802527A1F345A0B00B0BA29 /* Main.storyboard */,
 				5802527D1F345A0B00B0BA29 /* Assets.xcassets */,
 				5802527F1F345A0B00B0BA29 /* LaunchScreen.storyboard */,
@@ -97,6 +131,55 @@
 				580252721F345A0B00B0BA29 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		58B400C61FBEE99C009D5D75 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				58B400C71FBEE99C009D5D75 /* SCCollectionSectionFooterView.h */,
+				58B400C81FBEE99C009D5D75 /* SCCollectionSectionFooterView.m */,
+				58B400C91FBEE99C009D5D75 /* SCCollectionSectionHeaderView.h */,
+				58B400CA1FBEE99C009D5D75 /* SCCollectionSectionHeaderView.m */,
+				58B400CB1FBEE99C009D5D75 /* SCCollectionViewAdapter.h */,
+				58B400CC1FBEE99C009D5D75 /* SCCollectionViewAdapter.m */,
+				58B400CD1FBEE99C009D5D75 /* SCCollectionViewCell.h */,
+				58B400CE1FBEE99C009D5D75 /* SCCollectionViewCellModel.h */,
+				58B400CF1FBEE99C009D5D75 /* SCCollectionViewCellModel.m */,
+				58B400D01FBEE99C009D5D75 /* SCCollectionViewController.h */,
+				58B400D11FBEE99C009D5D75 /* SCCollectionViewController.m */,
+				58B400D21FBEE99C009D5D75 /* SCCollectionViewSectionHeaderFooter.h */,
+				58B400D31FBEE99C009D5D75 /* SCCollectionViewSectionModel.h */,
+				58B400D41FBEE99C009D5D75 /* SCCollectionViewSectionModel.m */,
+				58B400D51FBEE99C009D5D75 /* SCCutomCollectionViewCell.h */,
+				58B400D61FBEE99C009D5D75 /* SCCutomCollectionViewCell.m */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		58B400D71FBEE99D009D5D75 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				58B400D81FBEE99D009D5D75 /* MessageInterceptor.h */,
+				58B400D91FBEE99D009D5D75 /* MessageInterceptor.m */,
+				58B400DA1FBEE99D009D5D75 /* UIDevice+SCExtension.h */,
+				58B400DB1FBEE99D009D5D75 /* UIDevice+SCExtension.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		58B400DC1FBEE99D009D5D75 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				58B400DD1FBEE99D009D5D75 /* SCTableView.h */,
+				58B400DE1FBEE99D009D5D75 /* SCTableView.m */,
+				58B400DF1FBEE99D009D5D75 /* SCTableViewCell.h */,
+				58B400E01FBEE99D009D5D75 /* SCTableViewCell.m */,
+				58B400E11FBEE99D009D5D75 /* SCTableViewController.h */,
+				58B400E21FBEE99D009D5D75 /* SCTableViewController.m */,
+				58B400E31FBEE99D009D5D75 /* SCTableViewDataSource.h */,
+				58B400E41FBEE99D009D5D75 /* SCTableViewDataSource.m */,
+			);
+			path = TableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,13 +254,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				580252791F345A0B00B0BA29 /* SCTableViewController.m in Sources */,
-				E38BD5E81F5E871200075817 /* SCTableViewCell.m in Sources */,
+				58B400FD1FBEEC11009D5D75 /* MessageInterceptor.h in Sources */,
+				58B400FE1FBEEC11009D5D75 /* MessageInterceptor.m in Sources */,
+				58B400FF1FBEEC11009D5D75 /* UIDevice+SCExtension.h in Sources */,
+				58B401001FBEEC11009D5D75 /* UIDevice+SCExtension.m in Sources */,
+				58B400F51FBEEC0A009D5D75 /* SCTableView.h in Sources */,
+				58B400F61FBEEC0A009D5D75 /* SCTableView.m in Sources */,
+				58B400F71FBEEC0A009D5D75 /* SCTableViewCell.h in Sources */,
+				58B400F81FBEEC0A009D5D75 /* SCTableViewCell.m in Sources */,
+				58B400F91FBEEC0A009D5D75 /* SCTableViewController.h in Sources */,
+				58B400FA1FBEEC0A009D5D75 /* SCTableViewController.m in Sources */,
+				58B400FB1FBEEC0A009D5D75 /* SCTableViewDataSource.h in Sources */,
+				58B400FC1FBEEC0A009D5D75 /* SCTableViewDataSource.m in Sources */,
+				58B400E51FBEEC01009D5D75 /* SCCollectionSectionFooterView.h in Sources */,
+				58B400E61FBEEC02009D5D75 /* SCCollectionSectionFooterView.m in Sources */,
+				58B400E71FBEEC02009D5D75 /* SCCollectionSectionHeaderView.h in Sources */,
+				58B400E81FBEEC02009D5D75 /* SCCollectionSectionHeaderView.m in Sources */,
+				58B400E91FBEEC02009D5D75 /* SCCollectionViewAdapter.h in Sources */,
+				58B400EA1FBEEC02009D5D75 /* SCCollectionViewAdapter.m in Sources */,
+				58B400EB1FBEEC02009D5D75 /* SCCollectionViewCell.h in Sources */,
+				58B400EC1FBEEC02009D5D75 /* SCCollectionViewCellModel.h in Sources */,
+				58B400ED1FBEEC02009D5D75 /* SCCollectionViewCellModel.m in Sources */,
+				58B400EE1FBEEC02009D5D75 /* SCCollectionViewController.h in Sources */,
+				58B400EF1FBEEC02009D5D75 /* SCCollectionViewController.m in Sources */,
+				58B400F01FBEEC02009D5D75 /* SCCollectionViewSectionHeaderFooter.h in Sources */,
+				58B400F11FBEEC02009D5D75 /* SCCollectionViewSectionModel.h in Sources */,
+				58B400F21FBEEC02009D5D75 /* SCCollectionViewSectionModel.m in Sources */,
+				58B400F31FBEEC02009D5D75 /* SCCutomCollectionViewCell.h in Sources */,
+				58B400F41FBEEC02009D5D75 /* SCCutomCollectionViewCell.m in Sources */,
 				580252761F345A0B00B0BA29 /* AppDelegate.m in Sources */,
-				E34CB8401F5D739A00EEB78A /* SCTableViewDataSource.m in Sources */,
 				580252731F345A0B00B0BA29 /* main.m in Sources */,
-				E34CB8431F5D73E100EEB78A /* SCCollectionViewController.m in Sources */,
-				E38BD5EB1F5E890100075817 /* SCTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
