@@ -22,7 +22,9 @@ class ViewController: UITableViewController {
             // Assembling of MVC
             let model = MVCPerson.init(name: "David")
             let viewController = MVCViewController()  // viewController is a combination of view and controller
+            
             viewController.person = model
+            
             viewController.title = "MVC"
             self.navigationController?.pushViewController(viewController, animated: true)
             
@@ -31,7 +33,9 @@ class ViewController: UITableViewController {
             // Assembling of MVP
             let model = MVCPerson.init(name: "David")
             let view = MVCViewController()  // viewController is the view
+            
             view.person = model
+            
             view.title = "MVP"
             self.navigationController?.pushViewController(view, animated: true)
             
@@ -41,7 +45,9 @@ class ViewController: UITableViewController {
             let model = MVVMPerson(name: "David")
             let viewModel = MVVMViewModel(person: model)
             let view = MVVMViewController()  // viewController is the view
+            
             view.viewModel = viewModel
+            
             view.title = "MVVM"
             self.navigationController?.pushViewController(view, animated: true)
             
@@ -50,11 +56,15 @@ class ViewController: UITableViewController {
             // Assembling of VIPER module, without Router
             let view = VIPERViewController()
             let presenter = VIPERGreetingPresenter()
-            let interactor = VIPERGreetingInteractor()
+            let entity = VIPERPerson(name: "David")
+            let interactor = VIPERGreetingInteractor(person: entity)
+            
             view.eventHandler = presenter
             presenter.view = view
+            
             presenter.greetingProvider = interactor
             interactor.output = presenter
+            
             view.title = "VIPER"
             self.navigationController?.pushViewController(view, animated: true)
         }

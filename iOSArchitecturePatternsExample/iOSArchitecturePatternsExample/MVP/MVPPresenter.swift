@@ -12,8 +12,8 @@ import Foundation
 protocol MVPGreetingView: class {
 
     // 用于更新 view 的接口
-    func setGreeting(_ greeting: String)
-    func setGreetingButtonEnabled(_ enabled: Bool)
+    func setGreeting(_ greeting: String!)
+    func setGreetingButtonEnabled(_ enabled: Bool!)
 }
 
 /// Presenter

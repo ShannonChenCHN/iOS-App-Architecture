@@ -51,11 +51,14 @@ class MVVMViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // 布局代码
+        // ...
         
+        // 把事件交给 viewModel 处理
         self.viewModel.showGreeting()
         
         // 注册通知
-        NotificationCenter.default.addObserver(self, selector: #selector(MVCViewController.textFieldDidChangeText(_:)), name: .UITextFieldTextDidChange, object: self.nameField)
+        NotificationCenter.default.addObserver(self, selector: #selector(MVVMViewController.textFieldDidChangeText(_:)), name: .UITextFieldTextDidChange, object: self.nameField)
     }
     
     

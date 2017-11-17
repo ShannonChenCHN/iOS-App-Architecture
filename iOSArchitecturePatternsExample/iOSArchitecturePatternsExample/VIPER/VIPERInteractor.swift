@@ -14,27 +14,37 @@ protocol VIPERGreetingOutput: class {
 
 
 
-/// Transport data structure (not Entity)
+/// 用来转换数据结构的 model (not Entity)
 struct VIPERGreetingData {
     let greeting: String
     let subject: String
 }
 
 
-/// Interactor: Manipulate data and use cases
-/// It contains business logic related to the data (Entities) or networking, like creating new instances of entities or fetching them from the server
+/// Interactor: 处理数据相关的逻辑，比如借助 Services 创建新的 entity、或者通过 Managers 网络请求数据
 class VIPERGreetingInteractor : VIPERGreetingProvider {
     
-    weak var output: VIPERGreetingOutput!
+    
+    var person: VIPERPerson?                 // 持有 model
+    weak var output: VIPERGreetingOutput!   // 持有 presenter
     
     
+    required init(person: VIPERPerson) {
+        self.person = person
+    }
+    
+    
+    // 数据处理
     func provideGreetingData() {
-        
-        let person = VIPERPerson(name: "David") // usually comes from data access layer
-        if let name = person.name {
-            let subject = name + " " + "Stern"
-            let greeting = VIPERGreetingData(greeting: "Hello", subject: subject)
+    
+        if let name = self.person?.name {
+            let greeting = VIPERGreetingData(greeting: "Hello", subject: name)
             self.output.receiveGreetingData(greeting)
         }
+    }
+    
+    func updatePerson(name: String!) {
+    
+        self.person = VIPERPerson(name: name)
     }
 }
