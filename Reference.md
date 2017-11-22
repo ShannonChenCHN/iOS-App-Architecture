@@ -20,6 +20,10 @@
 
 - [杂谈: MVC/MVP/MVVM](http://www.jianshu.com/p/eedbc820d40a)⭐️⭐️
 
+- [Much ado about iOS app architecture](http://aplus.rs/2017/much-ado-about-ios-app-architecture)
+
+- [A Better MVC, Part 1: The Problems](https://davedelong.com/blog/2017/11/06/a-better-mvc-part-1-the-problems)
+
 - [marty-suzuki/iOSDesignPatternSamples](https://github.com/marty-suzuki/iOSDesignPatternSamples/issues/7)⭐️⭐️
 
 - [猿题库 iOS 客户端架构设计（蓝晨钰）](http://gracelancy.com/blog/2016/01/06/ape-ios-arch-design/)
