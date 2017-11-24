@@ -16,6 +16,7 @@
 
 - (void)requestGetNetWithUrl:(NSURL *)url Param:(NSDictionary *)param {
     // 采用 POP 的思想，面向接口编程，而不是针对实现编程，避免具体对象的依赖
+    // 使用依赖注入来解耦
     id<ApiService> apiSrevice = [[JSObjection createInjector] getObject:[GetApiService class]];
     
     // 使用装饰器模式来从外部修改对象
