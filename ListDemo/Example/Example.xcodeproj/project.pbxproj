@@ -133,23 +133,31 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		585FA8C11FCD650B009E04CE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				58B400CB1FBEE99C009D5D75 /* SCCollectionViewAdapter.h */,
+				58B400CC1FBEE99C009D5D75 /* SCCollectionViewAdapter.m */,
+				58B400CD1FBEE99C009D5D75 /* SCCollectionViewCell.h */,
+				58B400D21FBEE99C009D5D75 /* SCCollectionViewSectionHeaderFooter.h */,
+				58B400CE1FBEE99C009D5D75 /* SCCollectionViewCellModel.h */,
+				58B400CF1FBEE99C009D5D75 /* SCCollectionViewCellModel.m */,
+				58B400D31FBEE99C009D5D75 /* SCCollectionViewSectionModel.h */,
+				58B400D41FBEE99C009D5D75 /* SCCollectionViewSectionModel.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		58B400C61FBEE99C009D5D75 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				585FA8C11FCD650B009E04CE /* Core */,
 				58B400C71FBEE99C009D5D75 /* SCCollectionSectionFooterView.h */,
 				58B400C81FBEE99C009D5D75 /* SCCollectionSectionFooterView.m */,
 				58B400C91FBEE99C009D5D75 /* SCCollectionSectionHeaderView.h */,
 				58B400CA1FBEE99C009D5D75 /* SCCollectionSectionHeaderView.m */,
-				58B400CB1FBEE99C009D5D75 /* SCCollectionViewAdapter.h */,
-				58B400CC1FBEE99C009D5D75 /* SCCollectionViewAdapter.m */,
-				58B400CD1FBEE99C009D5D75 /* SCCollectionViewCell.h */,
-				58B400CE1FBEE99C009D5D75 /* SCCollectionViewCellModel.h */,
-				58B400CF1FBEE99C009D5D75 /* SCCollectionViewCellModel.m */,
 				58B400D01FBEE99C009D5D75 /* SCCollectionViewController.h */,
 				58B400D11FBEE99C009D5D75 /* SCCollectionViewController.m */,
-				58B400D21FBEE99C009D5D75 /* SCCollectionViewSectionHeaderFooter.h */,
-				58B400D31FBEE99C009D5D75 /* SCCollectionViewSectionModel.h */,
-				58B400D41FBEE99C009D5D75 /* SCCollectionViewSectionModel.m */,
 				58B400D51FBEE99C009D5D75 /* SCCutomCollectionViewCell.h */,
 				58B400D61FBEE99C009D5D75 /* SCCutomCollectionViewCell.m */,
 			);
