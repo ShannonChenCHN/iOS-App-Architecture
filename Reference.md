@@ -24,6 +24,8 @@
 
 - [A Better MVC, Part 1: The Problems](https://davedelong.com/blog/2017/11/06/a-better-mvc-part-1-the-problems)
 
+- [MVC. - codeplease.io](http://codeplease.io/2017/11/19/mvc/)
+
 - [Coordinator and FlowController ](https://github.com/onmyway133/blog/issues/106)
 
 - [View-state driven applications](https://www.cocoawithlove.com/blog/view-state-driven-applications.html)
