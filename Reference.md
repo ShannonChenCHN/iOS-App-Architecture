@@ -20,6 +20,10 @@
 
 - [杂谈: MVC/MVP/MVVM](http://www.jianshu.com/p/eedbc820d40a)⭐️⭐️
 
+- [IOS应用架构思考一（网络层）](https://blog.cnbluebox.com/blog/2015/05/07/architecture-ios-1/)
+
+- [模块化与解耦](https://blog.cnbluebox.com/blog/2015/11/28/module-and-decoupling/)
+
 - [Much ado about iOS app architecture](http://aplus.rs/2017/much-ado-about-ios-app-architecture)
 
 - [A Better MVC, Part 1: The Problems](https://davedelong.com/blog/2017/11/06/a-better-mvc-part-1-the-problems)
