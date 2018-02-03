@@ -26,3 +26,5 @@ AFNetworking.framework.zip
 fastlane/test-output/*
 
 Carthage/Build
+
+ArchitecturePatternsExample/ArchitecturePatternsExample.xcworkspace/xcuserdata/ShannonChen.xcuserdatad/UserInterfaceState.xcuserstate

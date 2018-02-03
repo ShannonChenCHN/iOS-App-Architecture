@@ -62,7 +62,7 @@
 
 - [MVVM和Controller瘦身实践](https://github.com/LeoMobileDeveloper/Blogs/blob/master/iOS/MVVM%20and%20Controller%20thin.md)
 
-- [优雅的开发TableView](https://github.com/LeoMobileDeveloper/Blogs/blob/master/Swift/Elegant%20TableView.md)
+
 
 
 - 谈谈 MVX 系列
@@ -86,6 +86,25 @@
 
 - [Struggling with iOS Design Patterns? Embrace Modlizer](https://medium.com/ios-os-x-development/struggling-with-ios-design-patterns-embrace-modlizer-85d621d4e734)：尝试利用 Extensions/Category 的方式来拆分 View Controller，在一定情况下起到了为 Controller 减负的作用，但是本质上只不过是把 View Controller 中的业务逻辑（主要逻辑、网络请求、数据处理等）分散到不同的文件中，其缺点在于，一是各 slice 之间相互通信的问题以及属性的访问问题，二是大部分逻辑逻辑都在 controller 中，不利于测试
 
+- [Pragmatic iOS Development: In defence of MVC](https://www.netguru.co/codestories/pragmatic-ios-development-in-defence-of-mvc)
+
+- [Model-View-Controller without the Controller](https://www.cocoawithlove.com/blog/mvc-without-the-c.html)
+
+- [MVVM — MVC done right.](https://medium.com/@sunshinejr/why-mvvm-mvc-as-we-know-is-a-lie-and-why-im-fine-with-it-d8bc14be1f17)
+
+- [Top-down iOS error architecture](https://medium.com/@londeix/top-down-error-architecture-d8715a28d1ad)
+
+- UITableView 和 UICollectionView 相关
+  - [如何写好一个UITableView](http://www.jianshu.com/p/504c61a9dc82)
+  - [Forget datasource & delegate: a new approach to UITableView](http://danielemargutti.com/2017/10/08/forget-datasource-delegates-a-new-approach-to-uitableview/)
+  - [优雅的开发TableView](https://github.com/LeoMobileDeveloper/Blogs/blob/master/Swift/Elegant%20TableView.md)
+  - IGListKit
+
+
+- MVVM
+  - [Introduction to MVVM - objc.io](https://www.objc.io/issues/13-architecture/mvvm/)
+  - [MVVM at Scale: Not so Simple...](https://academy.realm.io/posts/try-swift-nyc-2017-nataliya-patsovska-mvvm-at-scale/)
+
 - VIPER
   - [strongself/The-Book-of-VIPER](https://github.com/strongself/The-Book-of-VIPER)：一群俄罗斯人写的专门讲 VIPER 的书
   - [Architecting Mobile Apps with (B)VIPER Modules.](https://medium.com/mobile-travel-technologies/architecting-mobile-apps-with-b-viper-modules-e94e277c8d68) 
@@ -103,6 +122,10 @@
 
 - 类簇
   - [Zen and the Art of the Objective-C Craftsmanship: class cluster](https://github.com/objc-zen/objc-zen-book#class-cluster)
+  
+- 单例
+  - [Avoiding Singleton Abuse](https://www.objc.io/issues/13-architecture/singletons/)
+  - [Avoiding singletons in Swift](https://www.swiftbysundell.com/posts/avoiding-singletons-in-swift)
 
 - 面向切面编程（Aspect Oriented Programming）
   - [面向切面编程之 Aspects 源码解析及应用](http://wereadteam.github.io/2016/06/30/Aspects/)
