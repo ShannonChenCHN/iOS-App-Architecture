@@ -62,7 +62,7 @@
 
 - [MVVM和Controller瘦身实践](https://github.com/LeoMobileDeveloper/Blogs/blob/master/iOS/MVVM%20and%20Controller%20thin.md)
 
-
+- [onmyway133/fantastic-ios-architecture](https://github.com/onmyway133/fantastic-ios-architecture)：一个 iOS 架构资源合集。
 
 
 - 谈谈 MVX 系列
@@ -104,6 +104,7 @@
 - MVVM
   - [Introduction to MVVM - objc.io](https://www.objc.io/issues/13-architecture/mvvm/)
   - [MVVM at Scale: Not so Simple...](https://academy.realm.io/posts/try-swift-nyc-2017-nataliya-patsovska-mvvm-at-scale/)
+  - [[译]不再对 MVVM 感到绝望](https://juejin.im/post/5a782d0d5188257a856f1dd7)（[原文](https://medium.com/flawless-app-stories/how-to-use-a-model-view-viewmodel-architecture-for-ios-46963c67be1b)）
 
 - VIPER
   - [strongself/The-Book-of-VIPER](https://github.com/strongself/The-Book-of-VIPER)：一群俄罗斯人写的专门讲 VIPER 的书
