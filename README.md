@@ -47,6 +47,7 @@ A journey of diving into iOS app architecture.
   - 函数响应式编程
     - [ReactiveCocoa](https://github.com/ShannonChenCHN/iOSLevelingUp/issues/91)
     - RxSwift
+- [API 设计](https://github.com/ShannonChenCHN/iOS-App-Architecture/issues/13)
 
 ## 我的一点想法
 - [浅谈 iOS 应用架构](https://github.com/ShannonChenCHN/iOS-App-Architecture/issues/6)

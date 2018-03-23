@@ -60,6 +60,8 @@
 
 - [skyming/Trip-to-iOS-Design-Patterns](https://github.com/skyming/Trip-to-iOS-Design-Patterns)
 
+- [uber/RIBs](https://github.com/uber/RIBs)：Uber's cross-platform mobile architecture framework.
+
 - [MVVM和Controller瘦身实践](https://github.com/LeoMobileDeveloper/Blogs/blob/master/iOS/MVVM%20and%20Controller%20thin.md)
 
 - [onmyway133/fantastic-ios-architecture](https://github.com/onmyway133/fantastic-ios-architecture)：一个 iOS 架构资源合集。
@@ -83,6 +85,8 @@
 
 
 - [安卓的 MVP 架构在 iOS 里面到底是什么](https://mp.weixin.qq.com/s?__biz=MzI0NzI1NzU5NA==&mid=2247483715&idx=1&sn=720cd59aa03cf4856b1bfaea47b6362c&chksm=e9b381d6dec408c054c20f62e50491e529fad790d805bf330364fc107dc28c0810f276b445a4&mpshare=1&scene=23&srcid=1008H6aDSqQf6LHPtUv9VrJk#rd)
+
+- [饿了么移动APP的架构演进](https://www.jianshu.com/p/2141fb0dc62c)
 
 - [Struggling with iOS Design Patterns? Embrace Modlizer](https://medium.com/ios-os-x-development/struggling-with-ios-design-patterns-embrace-modlizer-85d621d4e734)：尝试利用 Extensions/Category 的方式来拆分 View Controller，在一定情况下起到了为 Controller 减负的作用，但是本质上只不过是把 View Controller 中的业务逻辑（主要逻辑、网络请求、数据处理等）分散到不同的文件中，其缺点在于，一是各 slice 之间相互通信的问题以及属性的访问问题，二是大部分逻辑逻辑都在 controller 中，不利于测试
 
