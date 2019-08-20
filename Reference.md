@@ -64,7 +64,13 @@
 
 - [MVVM和Controller瘦身实践](https://github.com/LeoMobileDeveloper/Blogs/blob/master/iOS/MVVM%20and%20Controller%20thin.md)
 
-- [onmyway133/fantastic-ios-architecture](https://github.com/onmyway133/fantastic-ios-architecture)：一个 iOS 架构资源合集。
+- 开源项目
+  - [onmyway133/fantastic-ios-architecture](https://github.com/onmyway133/fantastic-ios-architecture): 一个 iOS 架构资源合集。
+  - [tailec/ios-architecture](https://github.com/tailec/ios-architecture): A collection of iOS architectures - MVC, MVVM, MVVM+RxSwift, VIPER, RIBs and many others
+  - [AndreyPanov/ApplicationCoordinator](https://github.com/AndreyPanov/ApplicationCoordinator): Coordinators Essential tutorial 
+  - [radianttap/Coordinator](https://github.com/radianttap/Coordinator): Implementation of Coordinators app design pattern.
+
+- [Clean-Swift/CleanStore](https://github.com/Clean-Swift/CleanStore): A sample iOS app built using the Clean Swift architecture. Clean Swift is Uncle Bob's Clean Architecture applied to iOS and Mac projects. CleanStore demonstrates Clean Swift by implementing the create order use case described by in Uncle Bob's talks. https://clean-swift.com/clean-swift-ios-architecture/
 
 
 - 谈谈 MVX 系列
@@ -104,16 +110,23 @@
   - [优雅的开发TableView](https://github.com/LeoMobileDeveloper/Blogs/blob/master/Swift/Elegant%20TableView.md)
   - IGListKit
 
+  - MVP
+    - [FortechRomania/ios-mvp-clean-architecture](https://github.com/FortechRomania/ios-mvp-clean-architecture)
 
-- MVVM
+
+- MVVM/Reactive
   - [Introduction to MVVM - objc.io](https://www.objc.io/issues/13-architecture/mvvm/)
   - [MVVM at Scale: Not so Simple...](https://academy.realm.io/posts/try-swift-nyc-2017-nataliya-patsovska-mvvm-at-scale/)
   - [[译]不再对 MVVM 感到绝望](https://juejin.im/post/5a782d0d5188257a856f1dd7)（[原文](https://medium.com/flawless-app-stories/how-to-use-a-model-view-viewmodel-architecture-for-ios-46963c67be1b)）
+  - [ReactorKit/ReactorKit](https://github.com/ReactorKit/ReactorKit)
+  - RxSwift
+    - [sergdort/CleanArchitectureRxSwift](https://github.com/sergdort/CleanArchitectureRxSwift)
 
 - VIPER
   - [strongself/The-Book-of-VIPER](https://github.com/strongself/The-Book-of-VIPER)：一群俄罗斯人写的专门讲 VIPER 的书
   - [Architecting Mobile Apps with (B)VIPER Modules.](https://medium.com/mobile-travel-technologies/architecting-mobile-apps-with-b-viper-modules-e94e277c8d68) 
   - [Architecting iOS Apps with VIPER](https://www.objc.io/issues/13-architecture/viper/)
+  - [MindorksOpenSource/iOS-Viper-Architecture](https://github.com/MindorksOpenSource/iOS-Viper-Architecture)
 
 - Flux 架构
   - [React Flux入门指南](http://www.cocoachina.com/webapp/20151008/13649.html)
