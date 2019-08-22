@@ -44,23 +44,25 @@ POP 和 OOP 不是对立的关系，它们其实是相互关联的。
 - [Protocols — The Swift Programming Language (Swift 5.1)
 ](https://docs.swift.org/swift-book/LanguageGuide/Protocols.html)
 - [What is protocol-oriented programming?](https://www.hackingwithswift.com/example-code/language/what-is-protocol-oriented-programming)
+- [iOS Swift 3 Beginners Tutorial: Protocol-Oriented Views - Build An Animation Library in Swift 3](https://www.youtube.com/watch?v=AySlYrel7fc)🎬
 - [Is there a difference between Swift 2.0 protocol extensions and Java/C# abstract classes?](https://stackoverflow.com/questions/30943209/is-there-a-difference-between-swift-2-0-protocol-extensions-and-java-c-abstract?noredirect=1&lq=1)
 - [What is Protocol Oriented Programming in Swift? What added value does it bring?](https://stackoverflow.com/a/37530506)
+- 相关的 WWDC 视频 🎬
+  - [Protocol-Oriented Programming in Swift - WWDC](https://developer.apple.com/videos/play/wwdc2015/408/)
+  - https://developer.apple.com/videos/play/wwdc2016/419
+  - https://developer.apple.com/videos/play/wwdc2015/414
+  - https://developer.apple.com/videos/play/wwdc2015/411/
 
 
 
 
-A very good simple usage of POP:
-https://www.youtube.com/watch?v=AySlYrel7fc
-
-WWDC video
-https://developer.apple.com/videos/play/wwdc2016/419
-https://developer.apple.com/videos/play/wwdc2015/414
-https://developer.apple.com/videos/play/wwdc2015/411/
-
-
-
-
+- [面向协议编程与 Cocoa 的邂逅 (上) - OneV's Den](https://onevcat.com/2016/11/pop-cocoa-1/)
+- [面向协议编程并不是一颗银弹 - InfoQ](http://www.infoq.com/cn/articles/protocol-oriented-programming-is-not-a-silver-bullet)（Protocol Oriented Programming is Not a Silver Bullet）
+- [Swift 面向协议编程入门](https://github.com/xitu/gold-miner/blob/master/TODO/introduction-to-protocol-oriented-programming-in-swift.md)（Introduction to Protocol Oriented Programming in Swift）
+- [从 Swift 的面向协议编程说开去 - bestswifter](https://bestswifter.com/pop/)
+- [真刀真枪 面向协议编程 - Realm Academy](https://academy.realm.io/cn/posts/appbuilders-natasha-muraschev-practical-protocol-oriented-programming/)
+- [Introducing Protocol-Oriented Programming in Swift 3 - Ray Wenderlich](https://www.raywenderlich.com/148448/introducing-protocol-oriented-programming)
+- [UIKit 里如何面向协议编程](https://github.com/xitu/gold-miner/blob/master/TODO/ios-9-tutorial-series-protocol-oriented-programming-with-uikit.md)
 
 https://medium.com/nsistanbul/protocol-oriented-programming-in-swift-ad4a647daae2
 https://medium.com/ios-os-x-development/how-protocol-oriented-programming-in-swift-saved-my-day-75737a6af022
