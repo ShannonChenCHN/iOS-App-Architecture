@@ -1,6 +1,6 @@
 # Protocol-Oriented Programming
 
-### 什么是面向协议编程
+## 什么是面向协议编程
 
 不同于传统的（单）继承，Swift 中的 Protocol 不仅可以给某一单个类型增加新的功能，而且可以给所有遵循指定的协议的任意类型增加新的功能。
 
@@ -9,7 +9,7 @@ Swift 中的 Protocol 可以继承，而且可以通过 Protocol extension 提�
 比较推荐的使用方式是把逻辑拆分成多个小的 Protocol 中，每个 Protocol 做的事情都是具体的、独立的。比如一个商品根据其特点可以遵循 purchasable、serializable、searchable 这三个协议。
 
 
-### OOP VS. POP
+## OOP VS. POP
 
 
 POP 和 OOP 不是对立的关系，它们其实是相互关联的。
@@ -21,22 +21,62 @@ POP 和 OOP 不是对立的关系，它们其实是相互关联的。
 - 因为基类中集合了各种不同的功能，如果另一个不相关的类也有一部分功能与该基类一样，但此时却不能实现代码复用，因为它没有继承这个基类
 
 
-### Swift Language Guide 中关于 Protocol 的介绍
-- Protocol Syntax
-- Protocol Requirements
-- Method Requirements
-- Mutating Method Requirements
-- Initializer Requirements
-- Protocol as Types
-- Delegation
-- Adding Protocol Conformance with an Extension
-- Collections of Protocol Types
-- Protocol Inheritance
-- Class-Only Protocols
-- Protocol Composition
-- Checking for Protocol Conformance
-- Optional Protocol Requirements
-- Protocol Extensions
+## Swift Language Guide 中关于 Protocol 的介绍
+
+
+### 1. What is Protocol
+
+
+### 2. Protocol Syntax
+
+
+1. 基本语法跟 OC 中的 Protocol 差不多。
+
+2. 如果一个 class 既遵循协议，又继承了父类，则在定义这个类时，父类放在最前面，协议跟在后面。
+
+### 3. Property Requirements
+
+1. Protocol 中可以声明 instance property 和 type property，不管是 stored property 还是 computed property，我们只需要声明属性名和数据类型即可。
+
+2. 但是，Protocol 中声明的属性一定要指明是 gettable 还是兼有 gettable 和 settable。
+
+3. Protocol 中声明的属性一定要是 var 类型。
+
+### 4. Method Requirements
+
+
+### 5. Mutating Method Requirements
+
+
+### 6. Initializer Requirements
+
+
+### 7. Protocol as Types
+
+
+### 8. Delegation
+
+### 9. Adding Protocol Conformance with an Extension
+
+
+### 10. Collections of Protocol Types
+
+
+### 11. Protocol Inheritance
+
+
+### 12. Class-Only Protocols
+
+
+### 13. Protocol Composition
+
+### 14. Checking for Protocol Conformance
+
+
+### 15. Optional Protocol Requirements
+
+
+### 16. Protocol Extensions
 
 
 ### 参考
