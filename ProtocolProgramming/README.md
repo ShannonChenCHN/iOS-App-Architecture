@@ -19,9 +19,23 @@
 
 > “Don’t start with a class, start with a protocol.”
 
-什么是 Protocol？
+**什么是 Protocol？**
+
+维基百科中的定义：
+> Protocol is a term used by particular object-oriented programming languages with a variety of specific meanings, which other languages may term interface or trait.
+>
+> Protocol when used otherwise is akin to a Communication protocol, indicating the chain of interactions between the caller and the object.
+
+苹果官方文档的定义：
+> A protocol defines a blueprint of methods, properties, and other requirements that suit a particular task or piece of functionality. The protocol can then be adopted by a class, structure, or enumeration to provide an actual implementation of those requirements. Any type that satisfies the requirements of a protocol is said to conform to that protocol. …
+
+
+
 
 Protocol 是一个抽象的接口声明，定义了一些规范——声明了实体类需要实现的方法、属性，以及其他一些要求。
+
+
+
 
 ```Swift
 // An example of a protocol
@@ -47,15 +61,17 @@ POP 和 OOP 不是对立的关系，它们其实是相互关联的，在实践 P
 设计模式：**优先使用组合，而不是继承**。
 
 传统 OOP 存在的缺陷：
-- 基类做了太多的事情，其中有些功能并不是每个子类所需要的，这样就会导致代码复杂度上升，不好维护，做单元测试也不好做
+- 基类做了太多的事情，其中有些方法和属性并不是每个子类所需要的（这样会导致代码复杂度上升，不好维护，做单元测试也不好做）
 - 太依赖继承，如果想要另一个类中的功能，就只能在父类中重新实现一遍了（大多数语言都不支持多继承）
+- 继承层级太多时，在不同的类里面跳来跳去，编写代码或者修复 bug 都会变得非常棘手
 - struct 和 enum 不能支持继承
 
 
+```
  父类       ABC
 
 子类  A BC  AB  AC  ABC
-
+```
 
 图 1
 
@@ -65,9 +81,13 @@ POP 带来的优点：
 - 我们可以给一个类型新增已经实现好的功能，而不去改它父类的实现
 
 
+和我们之前看到的金字塔结构不一样，面向协议所提倡的是扁平化和去嵌套的代码：
+
+```
 协议             A    B    C 
 
 实体类型   A   B+C   A+B  A+C A+B+C 
+```
 
 图 2 
 
@@ -165,32 +185,40 @@ Swift 中 Protocol extension 和多继承的区别：
 
 
 ## 参考
-- [Protocol (object-oriented programming) - Wikipedia](https://en.wikipedia.org/wiki/Protocol_(object-oriented_programming))
-- [面向对象程序设计 - Wikipedia](https://zh.wikipedia.org/wiki/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1)
-- [Protocols — The Swift Programming Language (Swift 5.1)
+- OOP 相关
+  - [面向对象程序设计 - Wikipedia](https://zh.wikipedia.org/wiki/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1)
+  - [IF YOU'RE SUBCLASSING, YOU'RE DOING IT WRONG](https://krakendev.io/blog/subclassing-can-suck-and-heres-why)
+  - [All evidence points to OOP being bullshit](https://content.pivotal.io/blog/all-evidence-points-to-oop-being-bullshit)
+  - [Object Oriented Programming is an expensive disaster which must end](http://www.smashcompany.com/technology/object-oriented-programming-is-an-expensive-disaster-which-must-end)
+  - [Object Oriented Programming is exceptionally bad](https://www.leaseweb.com/labs/2015/08/object-oriented-programming-is-exceptionally-bad/)
+- POP 基本介绍
+  - [Protocol (object-oriented programming) - Wikipedia](https://en.wikipedia.org/wiki/Protocol_(object-oriented_programming))
+  - [Protocols — The Swift Programming Language (Swift 5.1)
 ](https://docs.swift.org/swift-book/LanguageGuide/Protocols.html)
-- [What is protocol-oriented programming?](https://www.hackingwithswift.com/example-code/language/what-is-protocol-oriented-programming)
-- [iOS Swift 3 Beginners Tutorial: Protocol-Oriented Views - Build An Animation Library in Swift 3](https://www.youtube.com/watch?v=AySlYrel7fc)🎬⭐️
-- [Is there a difference between Swift 2.0 protocol extensions and Java/C# abstract classes?](https://stackoverflow.com/questions/30943209/is-there-a-difference-between-swift-2-0-protocol-extensions-and-java-c-abstract?noredirect=1&lq=1)
-- [What is Protocol Oriented Programming in Swift? What added value does it bring?](https://stackoverflow.com/a/37530506)
-- [The Best of What's New in Swift - by Mike Ash](https://mikeash.com/pyblog/friday-qa-2015-06-19-the-best-of-whats-new-in-swift.html)⭐️
-- [Protocol Oriented Programming in Swift](https://www.pluralsight.com/guides/protocol-oriented-programming-in-swift)⭐️
+  - [What is protocol-oriented programming?](https://www.hackingwithswift.com/example-code/language/what-is-protocol-oriented-programming)
+  - [How Protocol Oriented Programming in Swift saved my day? - NIkant Vohra - Medium](https://medium.com/ios-os-x-development/how-protocol-oriented-programming-in-swift-saved-my-day-75737a6af022)⭐️
+- POP 教程
+  - [Protocol Oriented Programming in Swift](https://www.pluralsight.com/guides/protocol-oriented-programming-in-swift)⭐️
+  - [Introducing Protocol-Oriented Programming in Swift 3 - Ray Wenderlich](https://www.raywenderlich.com/814-introducing-protocol-oriented-programming-in-swift-3)
+  - [iOS Swift 3 Beginners Tutorial: Protocol-Oriented Views - Build An Animation Library in Swift 3](https://www.youtube.com/watch?v=AySlYrel7fc)🎬⭐️
+  - [Protocol Oriented Programming in Swift - NSIstanbul - Medium](https://medium.com/nsistanbul/protocol-oriented-programming-in-swift-ad4a647daae2)
+- 社区讨论
+  - [Is there a difference between Swift 2.0 protocol extensions and Java/C# abstract classes?](https://stackoverflow.com/questions/30943209/is-there-a-difference-between-swift-2-0-protocol-extensions-and-java-c-abstract?noredirect=1&lq=1)
+  - [What is Protocol Oriented Programming in Swift? What added value does it bring?](https://stackoverflow.com/a/37530506)
+  - [Protocol Oriented Programming is Not a Silver Bullet - Chris Eidhof](http://chris.eidhof.nl/post/protocol-oriented-programming/)（[中文翻译版](http://www.infoq.com/cn/articles/protocol-oriented-programming-is-not-a-silver-bullet)）⭐️
+  - [从 Swift 的面向协议编程说开去 - bestswifter](https://bestswifter.com/pop/)⭐️
+- Protocol Extension 和派发机制⭐️
+  - [The Best of What's New in Swift - by Mike Ash](https://mikeash.com/pyblog/friday-qa-2015-06-19-the-best-of-whats-new-in-swift.html)
+  - [关于面向协议编程之协议扩展与动态、静态派发](http://lijun.xyz/2017/02/12/Protocol-Extension/)
+  - [从Protocol Extension看Swift 派发机制](https://xiaozhuanlan.com/topic/4176502398)
+  - [性能考虑 - Swifter - Swift 必备tips](https://swifter.tips/performance/)
 - WWDC 视频 🎬
   - [Protocol-Oriented Programming in Swift - WWDC](https://developer.apple.com/videos/play/wwdc2015/408/)⭐️
   - [Protocol and Value Oriented Programming in UIKit Apps](https://developer.apple.com/videos/play/wwdc2016/419)⭐️
   - [Building Better Apps with Value Types in Swift](https://developer.apple.com/videos/play/wwdc2015/414)⭐️
   - [Swift in Practice](https://developer.apple.com/videos/play/wwdc2015/411/)
--[Introducing Protocol-Oriented Programming in Swift 3 - Ray Wenderlich](https://www.raywenderlich.com/814-introducing-protocol-oriented-programming-in-swift-3)
-- [How Protocol Oriented Programming in Swift saved my day? - NIkant Vohra - Medium](https://medium.com/ios-os-x-development/how-protocol-oriented-programming-in-swift-saved-my-day-75737a6af022)⭐️
-
-- [Protocol Oriented Programming is Not a Silver Bullet - Chris Eidhof](http://chris.eidhof.nl/post/protocol-oriented-programming/)（[中文翻译版](http://www.infoq.com/cn/articles/protocol-oriented-programming-is-not-a-silver-bullet)）
 - [面向协议编程与 Cocoa 的邂逅 (上) - OneV's Den](https://onevcat.com/2016/11/pop-cocoa-1/)
-- [Protocol Oriented Programming in Swift - NSIstanbul - Medium](https://medium.com/nsistanbul/protocol-oriented-programming-in-swift-ad4a647daae2)
-
-- [Practical Protocol-Oriented-Programming -  - Realm Academy](https://academy.realm.io/posts/appbuilders-natasha-muraschev-practical-protocol-oriented-programming/)
-- [Swift 面向协议编程入门](https://github.com/xitu/gold-miner/blob/master/TODO/introduction-to-protocol-oriented-programming-in-swift.md)（Introduction to Protocol Oriented Programming in Swift）
-- [从 Swift 的面向协议编程说开去 - bestswifter](https://bestswifter.com/pop/)
-- [真刀真枪 面向协议编程 - Realm Academy](https://academy.realm.io/cn/posts/appbuilders-natasha-muraschev-practical-protocol-oriented-programming/)
+- [Practical Protocol-Oriented-Programming -  - Realm Academy](https://academy.realm.io/posts/appbuilders-natasha-muraschev-practical-protocol-oriented-programming/)（[中文翻译版](https://academy.realm.io/cn/posts/appbuilders-natasha-muraschev-practical-protocol-oriented-programming/)）
 - [UIKit 里如何面向协议编程](https://github.com/xitu/gold-miner/blob/master/TODO/ios-9-tutorial-series-protocol-oriented-programming-with-uikit.md)
 - https://www.toptal.com/swift/introduction-protocol-oriented-programming-swift
 - https://www.appcoda.com/protocol-oriented-programming/

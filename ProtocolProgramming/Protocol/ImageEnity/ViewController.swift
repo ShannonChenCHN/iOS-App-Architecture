@@ -5,8 +5,14 @@
 //  Created by ShannonChen on 2019/9/1.
 //  Copyright © 2019 xianglongchen. All rights reserved.
 //
-// Protocol Oriented Programming in Swift. by Károly Nyisztor
-// https://www.pluralsight.com/guides/protocol-oriented-programming-in-swift
+
+/**
+ Protocol Oriented Programming in Swift. by Károly Nyisztor
+ https://www.pluralsight.com/guides/protocol-oriented-programming-in-swift
+ 
+ 类的方式 VS. POP 的方式
+ 
+ */
 
 import UIKit
 
