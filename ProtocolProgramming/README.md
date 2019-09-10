@@ -1,18 +1,34 @@
 # Protocol Oriented Programming in Swift
 
 
+## 目录
+- 一、Protocol 语法概览（Swift）
+- 二、什么是面向协议编程
+  - 1. OOP VS. POP
+  - 2. 几个例子
+  - 3. POP VS. 多继承
+- 三、POP 不是银弹
+- 四、Protocol 语法的详细介绍
+
 ## 一、Protocol 语法概览（Swift）
 
 基本上与 Objective-C 一致：
-- 定义 Protocol
-- Protocol 可以作为一个匿名类型来使用
+- 定义 Protocol  
+
+- Protocol 可以作为一个抽象的匿名类型来使用
 - 可以在一个类的 Extension 中遵循某个 Protocol
 - Protocol 可以继承
 
 比 Objective-C 更牛的特性：
-- 支持 struct、enumeration 值类型
+
+- 支持 struct、enumeration 值类型 
 - 在使用 Protocol 声明一个函数参数类型或者变量类型时，可以组合多个 Protocol
 - Protocol Extension 支持添加默认实现
+
+
+例子：
+
+- [Protocol Oriented Programming in Swift - NSIstanbul - Medium](https://medium.com/nsistanbul/protocol-oriented-programming-in-swift-ad4a647daae2)
 
 
 ## 二、什么是面向协议编程
@@ -35,8 +51,6 @@
 Protocol 是一个抽象的接口声明，定义了一些规范——声明了实体类需要实现的方法、属性，以及其他一些要求。
 
 
-
-
 ```Swift
 // An example of a protocol
 protocol Hashable {
@@ -44,8 +58,7 @@ protocol Hashable {
     func hash(into hasher: inout Hasher)
 }
 ```
-
-> 在 Swift 中，苹果更推荐使用值类型而不是 class。
+> 在 Swift 中，值类型跟 class 是同一级别的一级公民。
 
 Swift Protocol 的三个核心特性：
 - protocol inheritance：既保留了 OOP 的继承特性，又弥补了 struct、enum 这些值类型不支持继承的缺陷
@@ -53,18 +66,16 @@ Swift Protocol 的三个核心特性：
 - protocol extensions：提供默认实现
 
 
+
+
+延伸阅读：
+- [Value and Reference Types](https://developer.apple.com/swift/blog/?id=10)
+
 ### 1. OOP VS. POP
 
 
 POP 和 OOP 不是对立的关系，它们其实是相互关联的，在实践 POP 时，我们依然还需要依赖 OOP 的三大特性。所以，POP 和 OOP 是需要结合使用的，而不是孤立存在的。
 
-设计模式：**优先使用组合，而不是继承**。
-
-传统 OOP 存在的缺陷：
-- 基类做了太多的事情，其中有些方法和属性并不是每个子类所需要的（这样会导致代码复杂度上升，不好维护，做单元测试也不好做）
-- 太依赖继承，如果想要另一个类中的功能，就只能在父类中重新实现一遍了（大多数语言都不支持多继承）
-- 继承层级太多时，在不同的类里面跳来跳去，编写代码或者修复 bug 都会变得非常棘手
-- struct 和 enum 不能支持继承
 
 
 ```
@@ -75,10 +86,13 @@ POP 和 OOP 不是对立的关系，它们其实是相互关联的，在实践 P
 
 图 1
 
-POP 带来的优点：
-- protocol 更像是一个蓝图，而不是一个父类，protocol 只是一个抽象描述，告诉遵循者要实现什么。
-- 一个类型（包括值类型和引用类型）可以遵循多个不同的协议，所以我们可以将多个不同类别的功能拆分到不同的 Protocol 中去，这样既既减轻了基类的负担（甚至可以不要基类），又提高了代码的可复用性
-- 我们可以给一个类型新增已经实现好的功能，而不去改它父类的实现
+
+传统 OOP 存在的缺陷：
+- 基类做了太多的事情，其中有些方法和属性并不是每个子类所需要的（这样会导致代码复杂度上升，不好维护，做单元测试也不好做）
+- 横切关注点：太依赖继承，如果想要另一个类中的功能，就只能在父类中重新实现一遍了（大多数语言都不支持多继承）
+- 继承层级太多时，在不同的类里面跳来跳去，编写代码或者修复 bug 都会变得非常棘手
+- struct 和 enum 不能支持继承
+
 
 
 和我们之前看到的金字塔结构不一样，面向协议所提倡的是扁平化和去嵌套的代码：
@@ -91,9 +105,26 @@ POP 带来的优点：
 
 图 2 
 
-### 2. 一些例子
+
+在 POP 中，我们关注的是能做什么，而不是去继承什么。
+
+**优先使用组合，而不是继承**。
+
+POP 带来的优点：
+- protocol 更像是一个蓝图，而不是一个父类，protocol 只是一个抽象描述，告诉遵循者要实现什么。
+- 一个类型（包括值类型和引用类型）可以遵循多个不同的协议，所以我们可以将多个不同类别的功能拆分到不同的 Protocol 中去，这样既既减轻了基类的负担（甚至可以不要基类），又提高了代码的可复用性
+- 我们可以给一个类型新增已经实现好的功能，而不去改它父类的实现
+
+
+
+
+
+
+### 2. 几个例子
 
 - [Protocol Oriented Programming in Swift](https://www.pluralsight.com/guides/protocol-oriented-programming-in-swift)
+- [How Protocol Oriented Programming in Swift saved my day? - NIkant Vohra - Medium](https://medium.com/ios-os-x-development/how-protocol-oriented-programming-in-swift-saved-my-day-75737a6af022)
+
 
 ### 3. Swift Protocol 和多继承
 
@@ -101,7 +132,7 @@ POP 带来的优点：
 
 
 多继承存在的问题：
-- 方法/属性冲突：比如我们定义一个动物（类）既是狗（父类1）也是猫（父类2），两个父类都有“叫”这个方法。那么当我们调用“叫”这个方法时，它就不知道是狗叫还是猫叫了。
+- 菱形缺陷（方法冲突）：比如我们定义一个动物（类）既是狗（父类1）也是猫（父类2），两个父类都有“叫”这个方法。那么当我们调用“叫”这个方法时，它就不知道是狗叫还是猫叫了。
 - 数据（属性）存储的问题：比如我们现在有一个 File 类，InputFile 和 OutputFile 都继承了 File 类，IOFile 同时继承了 InputFile 和 OutputFile 类，那么 File 类中定义的属性，在 IOFile 中应该保存几分呢？
 
 Swift 中 Protocol extension 和多继承的区别：
@@ -117,9 +148,19 @@ Swift 中 Protocol extension 和多继承的区别：
 
 
 
-## 四、POP 不是银弹
+## 三、POP 不是银弹
 
-## 五、Protocol 语法的详细介绍
+- 不要为了面向协议编程而使用协议，多数情况下都有更简单的选择
+- 对于数据，使用 struct 可能更容易。对于复杂的行为（例如，具有多个方法的代理），使用协议通常更容易。
+
+> “协议可能非常有用，但不要为了面向协议编程而使用协议。首先要审视你的问题，并尝试以最简单的方式来解决它。让问题推动解决方案，而不是相反。面向协议编程本身无所谓好与坏。就像任何其他技术（函数式编程，OO，依赖注入，子类化）一样，它可以用来解决一个问题，我们应该尝试选择合适的工具。有时这是一个协议，但往往，有一个更简单的方法。”
+
+
+
+- [Protocol Oriented Programming is Not a Silver Bullet - Chris Eidhof](http://chris.eidhof.nl/post/protocol-oriented-programming/)（[中文翻译](http://www.infoq.com/cn/articles/protocol-oriented-programming-is-not-a-silver-bullet)）
+- [dotSwift 2016 - Rob Napier - Beyond Crusty: Real-World Protocols](https://www.dotconferences.com/2016/01/rob-napier-beyond-crusty-real-world-protocols)🎬
+
+## 四、Protocol 语法的详细介绍
 
 
 ### 1. Protocol Syntax
@@ -205,7 +246,7 @@ Swift 中 Protocol extension 和多继承的区别：
 - 社区讨论
   - [Is there a difference between Swift 2.0 protocol extensions and Java/C# abstract classes?](https://stackoverflow.com/questions/30943209/is-there-a-difference-between-swift-2-0-protocol-extensions-and-java-c-abstract?noredirect=1&lq=1)
   - [What is Protocol Oriented Programming in Swift? What added value does it bring?](https://stackoverflow.com/a/37530506)
-  - [Protocol Oriented Programming is Not a Silver Bullet - Chris Eidhof](http://chris.eidhof.nl/post/protocol-oriented-programming/)（[中文翻译版](http://www.infoq.com/cn/articles/protocol-oriented-programming-is-not-a-silver-bullet)）⭐️
+  - [Protocol Oriented Programming is Not a Silver Bullet - Chris Eidhof](http://chris.eidhof.nl/post/protocol-oriented-programming/)（[中文翻译](http://www.infoq.com/cn/articles/protocol-oriented-programming-is-not-a-silver-bullet)）⭐️
   - [从 Swift 的面向协议编程说开去 - bestswifter](https://bestswifter.com/pop/)⭐️
 - Protocol Extension 和派发机制⭐️
   - [The Best of What's New in Swift - by Mike Ash](https://mikeash.com/pyblog/friday-qa-2015-06-19-the-best-of-whats-new-in-swift.html)
@@ -217,8 +258,9 @@ Swift 中 Protocol extension 和多继承的区别：
   - [Protocol and Value Oriented Programming in UIKit Apps](https://developer.apple.com/videos/play/wwdc2016/419)⭐️
   - [Building Better Apps with Value Types in Swift](https://developer.apple.com/videos/play/wwdc2015/414)⭐️
   - [Swift in Practice](https://developer.apple.com/videos/play/wwdc2015/411/)
-- [面向协议编程与 Cocoa 的邂逅 (上) - OneV's Den](https://onevcat.com/2016/11/pop-cocoa-1/)
-- [Practical Protocol-Oriented-Programming -  - Realm Academy](https://academy.realm.io/posts/appbuilders-natasha-muraschev-practical-protocol-oriented-programming/)（[中文翻译版](https://academy.realm.io/cn/posts/appbuilders-natasha-muraschev-practical-protocol-oriented-programming/)）
+- [面向协议编程与 Cocoa 的邂逅 (上) - OneV's Den](https://onevcat.com/2016/11/pop-cocoa-1/)⭐️
+- [面向协议编程与 Cocoa 的邂逅 (下) - OneV's Den](https://onevcat.com/2016/12/pop-cocoa-2/)⭐️
+- [Practical Protocol-Oriented-Programming -  - Realm Academy](https://academy.realm.io/posts/appbuilders-natasha-muraschev-practical-protocol-oriented-programming/)（[中文翻译](https://academy.realm.io/cn/posts/appbuilders-natasha-muraschev-practical-protocol-oriented-programming/)）
 - [UIKit 里如何面向协议编程](https://github.com/xitu/gold-miner/blob/master/TODO/ios-9-tutorial-series-protocol-oriented-programming-with-uikit.md)
 - https://www.toptal.com/swift/introduction-protocol-oriented-programming-swift
 - https://www.appcoda.com/protocol-oriented-programming/

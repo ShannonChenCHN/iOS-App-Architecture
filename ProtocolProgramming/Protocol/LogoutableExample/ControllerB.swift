@@ -9,7 +9,7 @@
 import Foundation
 
 
-class ControllerB: ViewController, Logoutable {
+class ControllerB: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         

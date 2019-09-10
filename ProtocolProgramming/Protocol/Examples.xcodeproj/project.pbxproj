@@ -25,10 +25,56 @@
 		5880A73D231BC81700EFE561 /* ControllerA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5880A73C231BC81700EFE561 /* ControllerA.swift */; };
 		5880A73F231BC81E00EFE561 /* ControllerB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5880A73E231BC81E00EFE561 /* ControllerB.swift */; };
 		5880A747231BEA1700EFE561 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5880A746231BEA1700EFE561 /* main.swift */; };
+		5880A752231CBA4300EFE561 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5880A751231CBA4300EFE561 /* main.swift */; };
+		5880A757231CC56100EFE561 /* Step1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5880A756231CC56100EFE561 /* Step1.swift */; };
+		5880A759231CC58300EFE561 /* Step2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5880A758231CC58300EFE561 /* Step2.swift */; };
+		5880A75B231CC59D00EFE561 /* Step3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5880A75A231CC59D00EFE561 /* Step3.swift */; };
+		5880A75D231CC76800EFE561 /* Step4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5880A75C231CC76800EFE561 /* Step4.swift */; };
+		5880A765231CEB7600EFE561 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5880A764231CEB7600EFE561 /* main.swift */; };
+		5880A76A231CEBC400EFE561 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5880A769231CEBC400EFE561 /* User.swift */; };
+		5880A76C231CED5C00EFE561 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5880A76B231CED5C00EFE561 /* Request.swift */; };
+		5880A7CF231D0B2500EFE561 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5880A7CE231D0B2500EFE561 /* AppDelegate.swift */; };
+		5880A7D1231D0B2500EFE561 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5880A7D0231D0B2500EFE561 /* SceneDelegate.swift */; };
+		5880A7D3231D0B2500EFE561 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5880A7D2231D0B2500EFE561 /* ViewController.swift */; };
+		5880A7D6231D0B2500EFE561 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5880A7D4231D0B2500EFE561 /* Main.storyboard */; };
+		5880A7D8231D0B2600EFE561 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5880A7D7231D0B2600EFE561 /* Assets.xcassets */; };
+		5880A7DB231D0B2600EFE561 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5880A7D9231D0B2600EFE561 /* LaunchScreen.storyboard */; };
+		5880A7F9231D0C0400EFE561 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5880A7F7231D0C0400EFE561 /* Request.swift */; };
+		5880A7FA231D0C0400EFE561 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5880A7F8231D0C0400EFE561 /* User.swift */; };
+		5880A802231D0C5700EFE561 /* ProtocolNetworking2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5880A801231D0C5700EFE561 /* ProtocolNetworking2Tests.swift */; };
+		5880A80A231D0D3200EFE561 /* users-trump in Resources */ = {isa = PBXBuildFile; fileRef = 5880A809231D0D3200EFE561 /* users-trump */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5880A804231D0C5700EFE561 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85A80B3B230D48D20071EC24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5880A7CB231D0B2500EFE561;
+			remoteInfo = ProtocolNetworking2;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		5880A742231BEA1700EFE561 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		5880A74D231CBA4300EFE561 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		5880A760231CEB7600EFE561 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -63,6 +109,30 @@
 		5880A73E231BC81E00EFE561 /* ControllerB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerB.swift; sourceTree = "<group>"; };
 		5880A744231BEA1700EFE561 /* Weapon */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Weapon; sourceTree = BUILT_PRODUCTS_DIR; };
 		5880A746231BEA1700EFE561 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		5880A74F231CBA4300EFE561 /* Webservice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Webservice; sourceTree = BUILT_PRODUCTS_DIR; };
+		5880A751231CBA4300EFE561 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		5880A756231CC56100EFE561 /* Step1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1.swift; sourceTree = "<group>"; };
+		5880A758231CC58300EFE561 /* Step2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step2.swift; sourceTree = "<group>"; };
+		5880A75A231CC59D00EFE561 /* Step3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3.swift; sourceTree = "<group>"; };
+		5880A75C231CC76800EFE561 /* Step4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step4.swift; sourceTree = "<group>"; };
+		5880A762231CEB7600EFE561 /* ProtocolNetworking */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ProtocolNetworking; sourceTree = BUILT_PRODUCTS_DIR; };
+		5880A764231CEB7600EFE561 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		5880A769231CEBC400EFE561 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5880A76B231CED5C00EFE561 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		5880A7CC231D0B2500EFE561 /* ProtocolNetworking2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProtocolNetworking2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5880A7CE231D0B2500EFE561 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5880A7D0231D0B2500EFE561 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5880A7D2231D0B2500EFE561 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5880A7D5231D0B2500EFE561 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5880A7D7231D0B2600EFE561 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5880A7DA231D0B2600EFE561 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5880A7DC231D0B2600EFE561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5880A7F7231D0C0400EFE561 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		5880A7F8231D0C0400EFE561 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5880A7FF231D0C5700EFE561 /* ProtocolNetworking2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProtocolNetworking2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5880A801231D0C5700EFE561 /* ProtocolNetworking2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolNetworking2Tests.swift; sourceTree = "<group>"; };
+		5880A803231D0C5700EFE561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5880A809231D0D3200EFE561 /* users-trump */ = {isa = PBXFileReference; lastKnownFileType = text; path = "users-trump"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +151,34 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5880A741231BEA1700EFE561 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5880A74C231CBA4300EFE561 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5880A75F231CEB7600EFE561 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5880A7C9231D0B2500EFE561 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5880A7FC231D0C5700EFE561 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -131,12 +229,64 @@
 			path = Weapon;
 			sourceTree = "<group>";
 		};
+		5880A750231CBA4300EFE561 /* Webservice */ = {
+			isa = PBXGroup;
+			children = (
+				5880A751231CBA4300EFE561 /* main.swift */,
+				5880A756231CC56100EFE561 /* Step1.swift */,
+				5880A758231CC58300EFE561 /* Step2.swift */,
+				5880A75A231CC59D00EFE561 /* Step3.swift */,
+				5880A75C231CC76800EFE561 /* Step4.swift */,
+			);
+			path = Webservice;
+			sourceTree = "<group>";
+		};
+		5880A763231CEB7600EFE561 /* ProtocolNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				5880A764231CEB7600EFE561 /* main.swift */,
+				5880A769231CEBC400EFE561 /* User.swift */,
+				5880A76B231CED5C00EFE561 /* Request.swift */,
+			);
+			path = ProtocolNetworking;
+			sourceTree = "<group>";
+		};
+		5880A7CD231D0B2500EFE561 /* ProtocolNetworking2 */ = {
+			isa = PBXGroup;
+			children = (
+				5880A7F7231D0C0400EFE561 /* Request.swift */,
+				5880A7F8231D0C0400EFE561 /* User.swift */,
+				5880A7CE231D0B2500EFE561 /* AppDelegate.swift */,
+				5880A7D0231D0B2500EFE561 /* SceneDelegate.swift */,
+				5880A7D2231D0B2500EFE561 /* ViewController.swift */,
+				5880A7D4231D0B2500EFE561 /* Main.storyboard */,
+				5880A7D7231D0B2600EFE561 /* Assets.xcassets */,
+				5880A7D9231D0B2600EFE561 /* LaunchScreen.storyboard */,
+				5880A7DC231D0B2600EFE561 /* Info.plist */,
+			);
+			path = ProtocolNetworking2;
+			sourceTree = "<group>";
+		};
+		5880A800231D0C5700EFE561 /* ProtocolNetworking2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				5880A801231D0C5700EFE561 /* ProtocolNetworking2Tests.swift */,
+				5880A809231D0D3200EFE561 /* users-trump */,
+				5880A803231D0C5700EFE561 /* Info.plist */,
+			);
+			path = ProtocolNetworking2Tests;
+			sourceTree = "<group>";
+		};
 		85A80B3A230D48D20071EC24 = {
 			isa = PBXGroup;
 			children = (
+				5880A745231BEA1700EFE561 /* Weapon */,
 				5880A709231BA82F00EFE561 /* ImageEnity */,
 				5880A727231BC7B700EFE561 /* LogoutableExample */,
-				5880A745231BEA1700EFE561 /* Weapon */,
+				5880A763231CEB7600EFE561 /* ProtocolNetworking */,
+				5880A750231CBA4300EFE561 /* Webservice */,
+				5880A7CD231D0B2500EFE561 /* ProtocolNetworking2 */,
+				5880A800231D0C5700EFE561 /* ProtocolNetworking2Tests */,
 				85A80B44230D48D20071EC24 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -147,6 +297,10 @@
 				5880A708231BA82F00EFE561 /* ImageEnity.app */,
 				5880A726231BC7B700EFE561 /* LogoutableExample.app */,
 				5880A744231BEA1700EFE561 /* Weapon */,
+				5880A74F231CBA4300EFE561 /* Webservice */,
+				5880A762231CEB7600EFE561 /* ProtocolNetworking */,
+				5880A7CC231D0B2500EFE561 /* ProtocolNetworking2.app */,
+				5880A7FF231D0C5700EFE561 /* ProtocolNetworking2Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -205,6 +359,75 @@
 			productReference = 5880A744231BEA1700EFE561 /* Weapon */;
 			productType = "com.apple.product-type.tool";
 		};
+		5880A74E231CBA4300EFE561 /* Webservice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5880A755231CBA4300EFE561 /* Build configuration list for PBXNativeTarget "Webservice" */;
+			buildPhases = (
+				5880A74B231CBA4300EFE561 /* Sources */,
+				5880A74C231CBA4300EFE561 /* Frameworks */,
+				5880A74D231CBA4300EFE561 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Webservice;
+			productName = Webservice;
+			productReference = 5880A74F231CBA4300EFE561 /* Webservice */;
+			productType = "com.apple.product-type.tool";
+		};
+		5880A761231CEB7600EFE561 /* ProtocolNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5880A766231CEB7600EFE561 /* Build configuration list for PBXNativeTarget "ProtocolNetworking" */;
+			buildPhases = (
+				5880A75E231CEB7600EFE561 /* Sources */,
+				5880A75F231CEB7600EFE561 /* Frameworks */,
+				5880A760231CEB7600EFE561 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProtocolNetworking;
+			productName = ProtocolNetworking;
+			productReference = 5880A762231CEB7600EFE561 /* ProtocolNetworking */;
+			productType = "com.apple.product-type.tool";
+		};
+		5880A7CB231D0B2500EFE561 /* ProtocolNetworking2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5880A7E8231D0B2600EFE561 /* Build configuration list for PBXNativeTarget "ProtocolNetworking2" */;
+			buildPhases = (
+				5880A7C8231D0B2500EFE561 /* Sources */,
+				5880A7C9231D0B2500EFE561 /* Frameworks */,
+				5880A7CA231D0B2500EFE561 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProtocolNetworking2;
+			productName = ProtocolNetworking2;
+			productReference = 5880A7CC231D0B2500EFE561 /* ProtocolNetworking2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5880A7FE231D0C5700EFE561 /* ProtocolNetworking2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5880A806231D0C5700EFE561 /* Build configuration list for PBXNativeTarget "ProtocolNetworking2Tests" */;
+			buildPhases = (
+				5880A7FB231D0C5700EFE561 /* Sources */,
+				5880A7FC231D0C5700EFE561 /* Frameworks */,
+				5880A7FD231D0C5700EFE561 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5880A805231D0C5700EFE561 /* PBXTargetDependency */,
+			);
+			name = ProtocolNetworking2Tests;
+			productName = ProtocolNetworking2Tests;
+			productReference = 5880A7FF231D0C5700EFE561 /* ProtocolNetworking2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -224,6 +447,19 @@
 					5880A743231BEA1700EFE561 = {
 						CreatedOnToolsVersion = 11.0;
 					};
+					5880A74E231CBA4300EFE561 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					5880A761231CEB7600EFE561 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					5880A7CB231D0B2500EFE561 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					5880A7FE231D0C5700EFE561 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 5880A7CB231D0B2500EFE561;
+					};
 				};
 			};
 			buildConfigurationList = 85A80B3E230D48D20071EC24 /* Build configuration list for PBXProject "Examples" */;
@@ -242,6 +478,10 @@
 				5880A707231BA82F00EFE561 /* ImageEnity */,
 				5880A725231BC7B700EFE561 /* LogoutableExample */,
 				5880A743231BEA1700EFE561 /* Weapon */,
+				5880A74E231CBA4300EFE561 /* Webservice */,
+				5880A761231CEB7600EFE561 /* ProtocolNetworking */,
+				5880A7CB231D0B2500EFE561 /* ProtocolNetworking2 */,
+				5880A7FE231D0C5700EFE561 /* ProtocolNetworking2Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -264,6 +504,24 @@
 				5880A735231BC7B800EFE561 /* LaunchScreen.storyboard in Resources */,
 				5880A732231BC7B800EFE561 /* Assets.xcassets in Resources */,
 				5880A730231BC7B700EFE561 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5880A7CA231D0B2500EFE561 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5880A7DB231D0B2600EFE561 /* LaunchScreen.storyboard in Resources */,
+				5880A7D8231D0B2600EFE561 /* Assets.xcassets in Resources */,
+				5880A7D6231D0B2500EFE561 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5880A7FD231D0C5700EFE561 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5880A80A231D0D3200EFE561 /* users-trump in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,7 +561,57 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5880A74B231CBA4300EFE561 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5880A75D231CC76800EFE561 /* Step4.swift in Sources */,
+				5880A752231CBA4300EFE561 /* main.swift in Sources */,
+				5880A75B231CC59D00EFE561 /* Step3.swift in Sources */,
+				5880A757231CC56100EFE561 /* Step1.swift in Sources */,
+				5880A759231CC58300EFE561 /* Step2.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5880A75E231CEB7600EFE561 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5880A76A231CEBC400EFE561 /* User.swift in Sources */,
+				5880A76C231CED5C00EFE561 /* Request.swift in Sources */,
+				5880A765231CEB7600EFE561 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5880A7C8231D0B2500EFE561 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5880A7D3231D0B2500EFE561 /* ViewController.swift in Sources */,
+				5880A7F9231D0C0400EFE561 /* Request.swift in Sources */,
+				5880A7CF231D0B2500EFE561 /* AppDelegate.swift in Sources */,
+				5880A7FA231D0C0400EFE561 /* User.swift in Sources */,
+				5880A7D1231D0B2500EFE561 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5880A7FB231D0C5700EFE561 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5880A802231D0C5700EFE561 /* ProtocolNetworking2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5880A805231D0C5700EFE561 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5880A7CB231D0B2500EFE561 /* ProtocolNetworking2 */;
+			targetProxy = 5880A804231D0C5700EFE561 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5880A710231BA82F00EFE561 /* Main.storyboard */ = {
@@ -334,6 +642,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				5880A734231BC7B800EFE561 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5880A7D4231D0B2500EFE561 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5880A7D5231D0B2500EFE561 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5880A7D9231D0B2600EFE561 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5880A7DA231D0B2600EFE561 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -442,6 +766,136 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5880A753231CBA4300EFE561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L32PN8QKLZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5880A754231CBA4300EFE561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L32PN8QKLZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5880A767231CEB7600EFE561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L32PN8QKLZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5880A768231CEB7600EFE561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L32PN8QKLZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5880A7E9231D0B2600EFE561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L32PN8QKLZ;
+				INFOPLIST_FILE = ProtocolNetworking2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shannonchen.ProtocolNetworking2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5880A7EA231D0B2600EFE561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L32PN8QKLZ;
+				INFOPLIST_FILE = ProtocolNetworking2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shannonchen.ProtocolNetworking2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5880A807231D0C5700EFE561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L32PN8QKLZ;
+				INFOPLIST_FILE = ProtocolNetworking2Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shannonchen.ProtocolNetworking2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProtocolNetworking2.app/ProtocolNetworking2";
+			};
+			name = Debug;
+		};
+		5880A808231D0C5700EFE561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L32PN8QKLZ;
+				INFOPLIST_FILE = ProtocolNetworking2Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shannonchen.ProtocolNetworking2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProtocolNetworking2.app/ProtocolNetworking2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -586,6 +1040,42 @@
 			buildConfigurations = (
 				5880A749231BEA1700EFE561 /* Debug */,
 				5880A74A231BEA1700EFE561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5880A755231CBA4300EFE561 /* Build configuration list for PBXNativeTarget "Webservice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5880A753231CBA4300EFE561 /* Debug */,
+				5880A754231CBA4300EFE561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5880A766231CEB7600EFE561 /* Build configuration list for PBXNativeTarget "ProtocolNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5880A767231CEB7600EFE561 /* Debug */,
+				5880A768231CEB7600EFE561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5880A7E8231D0B2600EFE561 /* Build configuration list for PBXNativeTarget "ProtocolNetworking2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5880A7E9231D0B2600EFE561 /* Debug */,
+				5880A7EA231D0B2600EFE561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5880A806231D0C5700EFE561 /* Build configuration list for PBXNativeTarget "ProtocolNetworking2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5880A807231D0C5700EFE561 /* Debug */,
+				5880A808231D0C5700EFE561 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
