@@ -118,6 +118,7 @@
   - [Introduction to MVVM - objc.io](https://www.objc.io/issues/13-architecture/mvvm/)
   - [MVVM at Scale: Not so Simple...](https://academy.realm.io/posts/try-swift-nyc-2017-nataliya-patsovska-mvvm-at-scale/)
   - [[译]不再对 MVVM 感到绝望](https://juejin.im/post/5a782d0d5188257a856f1dd7)（[原文](https://medium.com/flawless-app-stories/how-to-use-a-model-view-viewmodel-architecture-for-ios-46963c67be1b)）
+  - [Clean Architecture and MVVM on iOS](https://tech.olx.com/clean-architecture-and-mvvm-on-ios-c9d167d9f5b3)
   - [ReactorKit/ReactorKit](https://github.com/ReactorKit/ReactorKit)
   - RxSwift
     - [sergdort/CleanArchitectureRxSwift](https://github.com/sergdort/CleanArchitectureRxSwift)
